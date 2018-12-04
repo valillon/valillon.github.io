@@ -2,14 +2,17 @@
 layout: post
 comments: true
 title:  "Creating funny caricatures with automatic face morphing"
-excerpt: "Some examples of transfering facial expression between two faces with Dlib and OpenCV to create facial caricatures automatically"
+excerpt: "Some examples of facial expression transference between two faces with Dlib and OpenCV to automatically create facial caricatures."
 date:   2018-12-03 12:00:00
-# img: "/assets/caricatures/donald_trump-hillary_clinton-0001.png"
+# img: "./assets/caricatures/antonio_de_la_gandara.jpg"
 mathjax: false
 ---
 
 > Any political attribution to this post is purely coincidence.
 
+## A sweet accident
+
+This is my first post here and casually starts with an accident. A friend of mine told me he was making a video for promoting [Vei a Vei](https://deveiavei.org), a neighborhood association for helping people who temporally require food support and other basic necessities. He was using some semi-commercial software to mimic the morphing effect popularized by the marvelous [Black or White](https://www.youtube.com/watch?v=F2AitTPI5U0) video-clip. But because he had to pay some bills for unlocking some functional features, he was doing it quite manually in the end. I wanted to help him. So after a quick search in Internet, I ended up playing around with a very fancy [face morphing code](https://www.learnopencv.com/face-morph-using-opencv-cpp-python). I wanted to make it easier for my friend, almost plug-and-play or at least something to be run in the terminal prompt with a single execution instruction. The original post required to add manually some extra facial landmarks and just a single morphing frame was generated. So while adapting the code, I made the mistake of not clearing the landmarks coordinates for every frame iteration. That caused the landmarks for one of the faces to be completely transfered to the other. That first cartoon face I saw was so funny that I though it was a joke hidden in the original code. But it wasn't. It was my bug! A bit of uncertainty in digital arts are like salt and pepper for a good receipt. I heard once from the great [Sergi Jordà](https://www.dtic.upf.edu/~sergi) that some randomness is a good ingredient for extending interactive systems to more expressive terrains. That comes to my mind often, to let the emotions and other unexpected facts be, stay around, just flow in the space and time.
 
 <div class="imgcap">
 	<table><tbody>
@@ -26,16 +29,19 @@ mathjax: false
 	</div>
 </div>
 
-## A sweet accident
-
-This is my first post here and starts with a casual accident. A friend of mine told me he was making a video for promoting [Vei a Vei](https://deveiavei.org), a neighborhood association for helping people who temporally require food support and other basic necessities. He was using some semi-commercial software to mimic the morphing effect popularized by the marvelous [Black or White](https://www.youtube.com/watch?v=F2AitTPI5U0) video-clip. But because he had to pay some bills for unlocking some functional features, he was doing it quite manually in the end. I wanted to help him. So after a quick search in Internet, I ended up playing around with a very fancy [face morphing code](https://www.learnopencv.com/face-morph-using-opencv-cpp-python). I wanted to make it easier for my friend, almost plug-and-play or at least something to be run in the terminal prompt with a single execution instruction. The original post required to add manually some extra facial landmarks and just a single morphing frame was generated. So while adapting the code, I made the mistake of not clearing the landmarks coordinates for every frame iteration. That caused the landmarks for one of the faces to be completely transfered to the other. That first cartoon face I saw was so funny that I though it was a joke hidden in the original code. But it wasn't. It was my bug! A bit of uncertainty in digital arts are like salt and pepper for a good receipt. I heard once from the great [Sergi Jordà](https://www.dtic.upf.edu/~sergi) that some randomness is a good ingredient for extending interactive systems to more expressive terrains. That comes to my mind often, to let the emotions and other unexpected facts be, stay around, just flow in the space and time.
-
-
 ## The morphing dream
 
 [Morphing](https://en.wikipedia.org/wiki/Morphing) is as old as the first human could image something to be transformed into another thing. It is the alchemist dreaming in transmuting organic matter into noble metals. It is the magic that converts the wand into a bouquet of flowers. It is the smooth transition in which two objects become one another. Two connected states of two different matters or simply the manifestation of a single matter having an untangled dual state.
 
 Coming back to the Earth, digital morphing got popular in the 90's in multiple films and video clips. Techniques were based on outlining curvatures in the initial and target images, to match them and then apply some spatial transformation, like the [Beier Neely](https://en.wikipedia.org/wiki/Beier–Neely_morphing_algorithm) algorithm. But the procedure to create a single clip was really [tedious](https://www.youtube.com/watch?v=Q5Z1_n0S1uo). These days object recognition algorithms in computer vision have let morphing software to advance in order to automate the procedure quite a lot. Specially for human faces. For instance, [Dlib](http://dlib.net) is a great toolkit for detecting facial landmarks in an image, among other things. The high-end smart-phones line operate all kind of face-based magic tricks for shooting pictures. Or popular apps like *faceApp* created awesome makeup effects and surprised everyone making [Rijksmuseum's paintings](https://twitter.com/ollyog/status/863026581010354177/photo/1) amusingly smile.
+
+<div class="imgcap">
+	<img src="{{site.baseurl}}/assets/caricatures/antonio_de_la_gandara.jpg" height="350">
+	<div class="thecap">
+		Antonio de la Gándara (1861-1917) - The cabaret's gentlement and four artists of the <i>Chat Noir</i> (1984).
+	</div>
+</div>
+
 
 ## Let's morph it
 
@@ -105,7 +111,7 @@ In some cases however if the poses between the two faces are so distant, the mor
 	</div>
 </div>
 
-Then we rise the score with a creepy series of disturbing faces. Note that some of them are limit cases in which some facial parts get too distorted, but still worked quite fine.
+Now we rise the score with a creepy series of disturbing faces. Note that some of them are limit cases in which some facial parts get too distorted, but still worked pretty good.
 
 
 <div class="imgcap">
