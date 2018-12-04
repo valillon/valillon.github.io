@@ -1,0 +1,21 @@
+# Site settings
+title: Rafael Redondo blog
+email: 
+description: "Interactive Art Programmer"
+baseurl: ""
+url: "http://valillon.github.io"
+works:  "Personal Works"
+works_url: http://tonoamusic.com/rafaelredondotejedor
+github_username:  valillon
+linkedin_username:  rafaelredondotejedor
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+highlighter: rouge
+kramdown:
+input: GFM
+auto_ids: true
+syntax_highlighter: rouge
+future: true
