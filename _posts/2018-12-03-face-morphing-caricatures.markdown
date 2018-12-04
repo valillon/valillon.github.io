@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Creating funny caricatures with automatic face morphing"
-excerpt: "This is a subtitle"
+excerpt: "Some examples of transfering facial expression between two faces with Dlib and OpenCV to create facial caricatures automatically"
 date:   2018-12-03 12:00:00
 # img: "/assets/caricatures/donald_trump-hillary_clinton-0001.png"
 mathjax: false
