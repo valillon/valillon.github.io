@@ -113,7 +113,7 @@ Then we rise the score with a creepy series of disturbing faces. Note that some 
 	<tr><td>
 		<img src="{{site.baseurl}}/assets/caricatures/galileo.jpg" width="119">
 	</td><td rowspan="2">
-		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-galileo-0001.jpg" width="210">		
+		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-galileo-0001.jpg" width="250">		
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/velazquez-galileo-0001.jpg" width="300">		
 	</td><td valign="top">
