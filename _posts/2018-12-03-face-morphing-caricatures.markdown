@@ -88,9 +88,9 @@ In some cases however if the poses between the two faces are so distant, the mor
 	<tr><td>
 		<img src="{{site.baseurl}}/assets/caricatures/van_gogh.jpg" width="122">
 	</td><td rowspan="2">
-		<img src="{{site.baseurl}}/assets/caricatures/paul_goughin-van_gogh-0001.jpg" height="300">		
+		<img src="{{site.baseurl}}/assets/caricatures/paul_goughin-van_gogh-0001.jpg" width="355">		
 	</td><td rowspan="2">
-		<img src="{{site.baseurl}}/assets/caricatures/van_gogh-paul_goughin-0001.jpg" height="300">		
+		<img src="{{site.baseurl}}/assets/caricatures/van_gogh-paul_goughin-0001.jpg" width="323">		
 	</td><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/paul_goughin.jpg" width="122">
 	</td></tr>
@@ -113,9 +113,9 @@ Then we rise the score with a creepy series of disturbing faces. Note that some 
 	<tr><td>
 		<img src="{{site.baseurl}}/assets/caricatures/galileo.jpg" width="119">
 	</td><td rowspan="2">
-		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-galileo-0001.jpg" height="300">		
+		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-galileo-0001.jpg" width="210">		
 	</td><td rowspan="2">
-		<img src="{{site.baseurl}}/assets/caricatures/velazquez-galileo-0001.jpg" height="300">		
+		<img src="{{site.baseurl}}/assets/caricatures/velazquez-galileo-0001.jpg" width="300">		
 	</td><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/galileo.jpg" width="119">
 	</td></tr>
