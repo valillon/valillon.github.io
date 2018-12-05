@@ -162,7 +162,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 	</td></tr>
 	</tbody></table>
 	<div class="thecap">
-		Batman's (Christian Bale) caricature with the Jocker's (Heath Ledger) facial expression.
+		Batman's (Christian Bale) caricature with the Joker's (Heath Ledger) facial expression.
 	</div>
 </div>
 
