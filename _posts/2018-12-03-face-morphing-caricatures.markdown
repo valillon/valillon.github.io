@@ -61,7 +61,7 @@ A great choice for shaping funny caricatures is to pair faces with completely di
 		<img src="{{site.baseurl}}/assets/caricatures/donald_trump.jpg" width="109.5">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-donald_trump-0001.jpg" height="300">		
-	</td></tr><tr><td valign="bottom>
+	</td></tr><tr><td valign="bottom">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton_delaunay.jpg" width="109.5">
 	</td></tr>
 	</tbody></table>
