@@ -16,11 +16,11 @@ This is my first post here and casually starts with an accident. A friend of min
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton.jpg" width="109.5">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/donald_trump-hillary_clinton-0001.jpg" height="300">		
-	</td></tr><tr><td>
+	</td></tr><tr><td valign="bottom">
 		<img src="{{site.baseurl}}/assets/caricatures/donald_trump_delaunay.jpg" width="109.5">
 	</td></tr>
 	</tbody></table>
@@ -57,11 +57,11 @@ A great choice for shaping funny caricatures is to pair faces with completely di
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/donald_trump.jpg" width="109.5">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-donald_trump-0001.jpg" height="300">		
-	</td></tr><tr><td>
+	</td></tr><tr><td valign="bottom>
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton_delaunay.jpg" width="109.5">
 	</td></tr>
 	</tbody></table>
@@ -72,7 +72,7 @@ A great choice for shaping funny caricatures is to pair faces with completely di
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton.jpg" width="119">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/velazquez-hillary_clinton-0001.jpg" height="300">		
@@ -138,7 +138,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/velazquez.jpg" width="120">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/jim_carrey-velazquez-0001.jpg" height="250">
@@ -153,7 +153,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/batman.jpg" width="120">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/jocker-batman-0001.jpg" height="250">
