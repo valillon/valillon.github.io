@@ -91,7 +91,7 @@ In some cases however if the poses between the two faces are so distant, the mor
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/van_gogh.jpg" width="122">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/paul_goughin-van_gogh-0001.jpg" width="355">		
@@ -116,7 +116,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 
 <div class="imgcap">
 	<table><tbody>
-	<tr><td>
+	<tr><td valign="top">
 		<img src="{{site.baseurl}}/assets/caricatures/galileo.jpg" width="119">
 	</td><td rowspan="2">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton-galileo-0001.jpg" width="250">		
