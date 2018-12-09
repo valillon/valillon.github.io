@@ -4,7 +4,10 @@ comments: true
 title:  "Creating funny caricatures with automatic face morphing"
 excerpt: "Some examples of facial expression transference between two faces with Dlib and OpenCV to automatically create facial caricatures."
 date:   2018-12-03 12:00:00
+author: "valillon"
+header-img: "./assets/caricatures/donald_trump-hillary_clinton-0001.jpg"
 # img: "./assets/caricatures/antonio_de_la_gandara.jpg"
+tags:       [machine learning, programming, python, neural networks, dlib, caricatures, art, cartoon]
 mathjax: false
 ---
 
