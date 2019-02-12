@@ -1,18 +1,18 @@
 ---
-layout: post
-comments: true
+layout: single
 title:  "Java snippet for generating scheduled AppStore sales reports"
 excerpt: "This an old post from Blogger, now migrated here, for generating AppStore purchases."
 date:   2013-04-18 11:00:00
-author: "valillon"
-header-img: ""
-img: ""
-tags: [java, programming, AppStore, sales]
-mathjax: false
+classes: wide
+tags:
+  - java
+  - programming
+  - AppStore
+  - sales
 ---
 
-> This is an old post migratted from [Blogger](http://thisshouldbethetitle.blogspot.com/2013/04/java-snippet-for-generating-scheduled.html). Some parts may be deprecated.    
-
+This is an old post migratted from [Blogger](http://thisshouldbethetitle.blogspot.com/2013/04/java-snippet-for-generating-scheduled.html). Some parts may be deprecated.    
+{: .notice}
 
 Hi developers! I've recently published my first iOS app on the AppStore and I thought that I should contribute as I did receive invaluable info from other developers too. 
 
@@ -24,7 +24,8 @@ The first thing you need before typing anything is a tiny file named `Autoingest
 
 Have it all? Fine! Let's code. 
 
-> Hereafter all the code can be found at [GenAppStoreSales](https://github.com/valillon/GenAppStoreSales).
+Hereafter all the code can be found at [GenAppStoreSales](https://github.com/valillon/GenAppStoreSales).
+{: .notice--primary}
 
 The next method `autoingestionDownload()` will request your reports according to a given date. Maybe some variables could be defined globally for efficiency but the script will be so light that efficiency is not a matter to be worried for the moment. 
 
@@ -232,4 +233,5 @@ Coda1: if some of you smarty-pants wondered why the variable `sourcePath` is nam
 
 Coda2: you can also have a look to [www.tonoamusic.com](www.tonoamusic.com).
 
-Note: unfortunately the *TOnOa Music* has been discontinued. 
+Unfortunately the *TOnOa Music* has been discontinued. 
+{: .notice--info}

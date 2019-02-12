@@ -1,17 +1,20 @@
 ---
-layout: post
-comments: true
+layout: single
 title:  "Notifying daily AppStore reports with Automator"
 excerpt: "This an old post from Blogger, now migrated here, for notifying AppStore purchases with Automator (macOS)."
 date:   2013-04-23 11:00:00
-author: "valillon"
-header-img: ""
-img: ""
-tags: [java, programming, Automator, AppStore, sales, launchd]
-mathjax: false
+classes: wide
+tags: 
+    - java
+    - programming
+    - Automator
+    - AppStore
+    - sales
+    - launchd
 ---
 
-> This is an old post migratted from [Blogger](http://thisshouldbethetitle.blogspot.com/2013/04/notifying-daily-appstore-reports-with.html). Some parts may be deprecated.
+This is an old post migratted from [Blogger](http://thisshouldbethetitle.blogspot.com/2013/04/notifying-daily-appstore-reports-with.html). Some parts may be deprecated.
+{: .notice}
 
 
 In this [post]({{site.baseurl}}/2013/04/18/generate-appstore-purchases) I published a snippet to download AppStore sales reports of our apps. Therein a so called `GenAppStoreSalesReport.class` that requests reports according to their availability in the Apple servers. Since daily reports can be downloaded within 14 days after they have been created (normally the next day to the corresponding date issue), therefore it is more than convenient an automatic task to download our reports regularly. 
@@ -25,13 +28,10 @@ My first option was to pipe *iCal+Automator+NotificationCenter*, but the last *i
 
 When opening *Automator* you'll be prompted to choose between several document types. Choose application. Then to create a workflow you just drag and drop items from the Actions and Variables at the left hand side panel. First create a simple shell script to change directory where your `GenAppStoreSalesReport.class` is located and run it (it's preferable `cd` than execute through the whole path to avoid java runtime errors). Then attach the action *Copy to Clipboard* to capture output info. 
 
-<div class="imgcap">
-	<img src="{{site.baseurl}}/assets/notifier/shellScript.png" height="350">
-	<div class="thecap">
-		How to run the <i>GenAppStoreSalesReport</i> script in <i>Automator</i>.
-	</div>
-</div>
-
+<figure class="align-center">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/notifier/shellScript.png" alt="">
+    <figcaption>How to run the <i>GenAppStoreSalesReport</i> script in <i>Automator</i></figcaption>
+</figure>
 
 ## Make the Notification Center notify you 
 
@@ -43,26 +43,17 @@ To make your notification center display the output data printed by your `GenApp
 2. Then type one or several keywords to filter those lines you want to be displayed. In my case, the class file prints, among other data, the total AppStore sales with the string 'Total downloaded' followed by the number of product units. 
 3. Then save that line to a variable (change your class file to print whatever you need and filter it properly to create as many text-variables as you need). 
 
-
-<div class="imgcap">
-	<img src="{{site.baseurl}}/assets/notifier/contentsVariable.png" height="350">
-	<div class="thecap">
-		How to filter in <i>Automator</i> the purchased app units from reports.
-	</div>
-</div>
-
+<figure class="align-center">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/notifier/contentsVariable.png" alt="">
+    <figcaption>How to filter in <i>Automator</i> the purchased app units from reports.</figcaption>
+</figure>
 
 To deliver your text-variables to the notification center you can add either a final action `execute AppleScript` like [here](http://hints.macworld.com/article.php?story=20120831112030251) or install an action like [this](http://www.automatedworkflows.com/2012/08/26/display-notification-center-alert-automator-action-1-0-0/). For simplicity I did the last one with two sample text-variables. Save your workflow application wherever you like (I prefer to have it next to my GenAppStoreSalesReports and Autoingestion) and we're done with *Automator*. We just need to make it run daily. 
 
-
-<div class="imgcap">
-	<img src="{{site.baseurl}}/assets/notifier/notificationCenter.png" height="350">
-	<div class="thecap">
-		How to display a purchases in the Notification Center.
-	</div>
-</div>
-
-
+<figure class="align-center">
+    <img src="{{ site.url }}{{ site.baseurl }}/assets/notifier/notificationCenter.png" alt="">
+    <figcaption>How to display a purchases in the Notification Center.</figcaption>
+</figure>
 
 ## Update your reports with *launchd*
 
@@ -82,7 +73,7 @@ Then create your .plist file with a memorable name like:
 $ vi com.myAppName.updateSalesReports.plist
 ```
 
-Then press the i-key, paste the following code, press ESC and save it by typing ':wq'. Note if you want to modify this file with the *vi* editor you must pay attention to the use of TAB instead of SPACEs (the last won't work). 
+Then press the i-key, paste the following code, press `ESC` and save it by typing `:wq`. Note if you want to modify this file with the *vi* editor you must pay attention to the use of `TAB` instead of `SPACEs` (the last won't work). 
 
 
 ```xml
@@ -131,5 +122,6 @@ Happy coding : )
 
 Coda: really idle readers go to play with bubbles at my web [www.tonoamusic.com](www.tonoamusic.com).
 
-Note: unfortunately the *TOnOa Music* has been discontinued. 
+Unfortunately the *TOnOa Music* has been discontinued.
+{: .notice--info}
 
