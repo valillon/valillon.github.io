@@ -13,11 +13,11 @@ tags:
     - art
 ---
 
-Light and space is the origin of everything, the two gametes which engendered the Universe. Likewise, in the painting, a window to the Universe, the space becomes canvas and the light emerges in the form of colorful pigments. Somebody said once that the painting is just that, light and space. And it is still mysterious how a canvas and a bunch of pigments can condense the deepest corners of the human soul.
+Light and space is the origin of everything, the two gametes which engendered the Universe. Likewise, in the painting as window to the Universe, the space becomes canvas and the light emerges in the form of colorful pigments. Somebody said once that the painting is just that, light and space. And it is still mysterious how a canvas and a bunch of pigments can condense the deepest corners of the human soul.
 
-In particular, the light confined in the Meninas’ room can manifest itself the history of painting. Everything can be explained therein, any emotion can be found impregnated in those Velazquez's strokes. The atmosphere in that room has inspired painters, fascinated artists, and hypnotized audiences for centuries until our days. The mere idea of having the possibility to get not inside the canvas, but inside the room itself, is so attractive that triggers innumerable imaginary visions. By imaging yourself inside the painting next to Velazquez, walking between the Meninas, facing the Kings' mirror, or looking through that mysterious door at the end of the room, conforms a spatial-temporal transportation through the wrinkles of the Universe.
+In particular, the light confined in the Meninas’ room can manifest itself the history of painting. Everything can be explained therein, any emotion can be found impregnated in those Velazquez's strokes. Not in vain the atmosphere in that room has inspired painters, fascinated artists, and hypnotized audiences for centuries until our days.  The mere idea of having the possibility to get not inside the canvas, but inside the room itself, is so attractive that triggers innumerable imaginary visions. By imaging yourself inside the painting next to Velazquez, walking between the Meninas, facing the Kings' mirror, or looking through that mysterious door at the end of the room, conforms a spatial-temporal transportation through the wrinkles of the Universe.
 
-I don't remember when I started to be deeply fascinated by the painting. Recently, several months ago, I discovered that a neural network could estimate depth from a single image. I instantly dreamed about the idea of having a deep look inside that Meninas’ room.
+I don't remember when I started to be deeply fascinated by paintings. Recently, several months ago, I discovered that a neural network could estimate depth from a single image. I instantly dreamed about the idea of having a deep look inside that Meninas’ room.
 
 ## Neural Models
 
@@ -27,11 +27,11 @@ Nowadays, deep neural networks for computer vision have been trained with so man
 
 ## Projection and lights
 
-In order to project depth into space, focal projection is used instead of parallel projection. However most of the paintings do not present an evident optical perspective. Thus, for compromise, all the 3D models are projected with a similar and quite long focal distance. Regarding lights, no external spotlight illuminates the 3D canvases. The light contained inside the paintings is so marvelous that generates in itself such chiaroscuro atmospheres.
+In order to project depth into space, focal projection is used instead of parallel projection. However most of the paintings do not present an evident optical perspective. Thus, for compromise, all the 3D models are projected with a similar and quite long focal distance. Regarding lights, no external spotlight illuminates the 3D canvases. The light contained inside the paintings is so marvelous that inherently generates the chiaroscuro atmospheres.
 
 ## The deep look
 
-Looking carefully at the generated depths, specially when they are 3D projected, one can realize that buildings and elements like roofs, windows, or bridges are prettily reconstructed. Actually, Megadepth was specifically trained for that purpose. Furthermore, human silhouettes were also somehow considered during training and so people are gratefully reconstructed too. However, one can notice across all the processed paintings that several heads, and curiously heads of women, failed to be correctly estimated in their depth. On the contrary, the Millet's pitchfork for instance is nicely molded, even though the network probably never saw a tool like that before. Regardless the inaccuracies and visibly wrapped and twisted volumes, from an artistic point of view, new pictorial landscapes emerged so beautifully in the end. And that made me get so excited.
+Looking carefully at the generated depths maps, specially when they are 3D projected, it can be seen that buildings and other elements like roofs, windows, and bridges are prettily reconstructed. Actually, Megadepth was specifically trained for that purpose. Furthermore, human silhouettes were also somehow considered during training and so people are gracefully reconstructed too. However, it is noticeable that several heads, and curiously heads of women, failed to be correctly estimated in their depth. On the contrary, the Millet's pitchfork, for instance, is nicely molded, even though the network has probably never seen a tool like this before. Regardless the inaccuracies and warped volumes, from an artistic point of view new pictorial landscapes emerged beautifully, which filled me with excitement.
 
 ## The painters' paintings
 
