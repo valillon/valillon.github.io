@@ -13,11 +13,13 @@ tags:
     - art
 ---
 
-Light and space is the origin of everything, the two gametes which engendered the Universe. Likewise, in the painting as window to the Universe, the space becomes canvas and the light emerges in the form of colorful pigments. Somebody said once that the painting is just that, light and space. And it is still mysterious how a canvas and a bunch of pigments can condense the deepest corners of the human soul.
+Light and space is the origin of everything, the two gametes which engendered the Universe. Likewise, in the painting as a window to the Universe, the space becomes canvas and the light emerges in the form of colorful pigments. Somebody said once that the painting is just that, light and space. And it is still mysterious how a canvas and a bunch of pigments can condense the deepest corners of the human soul.
 
 In particular, the light confined in the Meninas’ room can manifest itself the history of painting. Everything can be explained therein, any emotion can be found impregnated in those Velazquez's strokes. Not in vain the atmosphere in that room has inspired painters, fascinated artists, and hypnotized audiences for centuries until our days.  The mere idea of having the possibility to get not inside the canvas, but inside the room itself, is so attractive that triggers innumerable imaginary visions. By imaging yourself inside the painting next to Velazquez, walking between the Meninas, facing the Kings' mirror, or looking through that mysterious door at the end of the room, conforms a spatial-temporal transportation through the wrinkles of the Universe.
 
 I don't remember when I started to be deeply fascinated by paintings. Recently, several months ago, I discovered that a neural network could estimate depth from a single image. I instantly dreamed about the idea of having a deep look inside that Meninas’ room.
+
+*A Deep Look Inside Paintings* is a video artwork which invites to an imagination journey through the hidden third dimension of paintings. The depth embedded in a 2D canvas by means of the conferred painter's perspective is not only unfolded, but also a 3D space is created here to navigate through, from which a whole new vision of the painting arises. In this process, the rendered inaccuracies only contribute to the drama and the beauty of these paintings. The electronic textures in the Debussy's *Clair de lune*, as magic powders, confers life to the audio-reactive canvases by connecting both classical and actual digital worlds.
 
 ## Neural Models
 
@@ -41,7 +43,7 @@ Looking carefully at the generated depths maps, specially when they are 3D proje
 - Edgar Degas, *Répétition de ballet* (1873).
 - Georges Seurat, *Un dimanche après-midi à l'Île de la Grande Jatte* (1886).
 - Pablo Picasso, *Mujer en azul* (1901).
-- Ramon Pujolà, *Salamanca* (2018).
+- Ramon Pujolà, *Salamanca* (2018). Follow him [@ramon_pujola](https://www.instagram.com/ramon_pujola).
 
 ---
 To render these 3D models check [DepthPainter](http://github.com/valillon/DepthPainter) out.	
