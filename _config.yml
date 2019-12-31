@@ -20,7 +20,7 @@ title                    : "valillon.github.io"
 title_separator          : "-"
 name                     : "Rafael Redondo Tejedor"
 description              : "Computer Art Programmer"
-url                      : "http://valillon.github.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "http://valillon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "valillon/valillon.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -105,7 +105,7 @@ author:
   location         : "Barcelona, ES"
   email            : # "some@email.com"
   uri              :
-  home             : http://tonoamusic.com/rafaelredondotejedor # "absolute or relative url to link to author home"
+  home             : http://valillon.art # "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
