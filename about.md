@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: archive
 permalink: /about/
 title: "Rafael Redondo Tejedor"
 ---

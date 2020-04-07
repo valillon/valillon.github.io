@@ -11,23 +11,21 @@ tags:
   - sales
 ---
 
-This is an old post migratted from [Blogger](http://thisshouldbethetitle.blogspot.com/2013/04/java-snippet-for-generating-scheduled.html). Some parts may be deprecated.    
+This is an old post migrated from [Blogger](http://thisshouldbethetitle.blogspot.com/2013/04/java-snippet-for-generating-scheduled.html). Some parts may be deprecated.    
 {: .notice}
 
 Hi developers! I've recently published my first iOS app on the AppStore and I thought that I should contribute as I did receive invaluable info from other developers too. 
 
-I decided that a good point to start with is a Java script for scheduling downloads of our daily, weekly, monthly and yearly sales reports. May be some of you find it interesting to save some time. Hands on it. 
+I decided that a good point to start with is a Java script for scheduling downloads of our daily, weekly, monthly and yearly sales reports. You may find it useful to save some precious time. Hands on it. 
 
-The first thing you need before typing anything is a tiny file named `Autoingestion.class`, a Java class provided by Apple to facilitate login and download sales reports. Go into the iTunes connect portal, click on *Sales and Trends* and then *Download User Guide*. You'll get downloaded a detailed guide *AppleStoreReportingInstructions.pdf* to use this java class and more importantly a link to download it. Although a thorough reading is recommended to adapt the following snippet, at least you'll be able to find 3 important values to make this work, apart from your **AppleID** and your **password**, your **vendorID**. 
-
-[Eclipse](https://www.eclipse.org/downloads/) will be useful too, ahem. 
+The first thing you need before programming anything is a tiny file named `Autoingestion.class`, a Java class provided by Apple to facilitate login and download sales reports. Go into the iTunes connect portal, click on *Sales and Trends* and then *Download User Guide*. You'll get downloaded a detailed guide *AppleStoreReportingInstructions.pdf* to use this java class and, more importantly, a link to download it. Although a thorough reading is recommended to adapt the following snippet, at least you'll be able to find 3 important values to make this work, apart from your **AppleID** and your **password**, your **vendorID**. 
 
 Have it all? Fine! Let's code. 
 
 Hereafter all the code can be found at [GenAppStoreSales](https://github.com/valillon/GenAppStoreSales).
 {: .notice--primary}
 
-The next method `autoingestionDownload()` will request your reports according to a given date. Maybe some variables could be defined globally for efficiency but the script will be so light that efficiency is not a matter to be worried for the moment. 
+The next method `autoingestionDownload()` will request your reports according to a given date. Some variables could be defined globally for efficiency but the script will be so light that efficiency is not a matter to be worried for now. 
 
 ```java
 private static void autoingestionDownload(String reportName, String dateType, String dateCode) throws IOException
@@ -83,7 +81,7 @@ private static void autoingestionDownload(String reportName, String dateType, St
 ```
 
 
-Well, this was the core routine which will be called by every report request at the main java function. Before going further, let's define a few global variables and two helpful methods: `updateRollCalendar()` to update the calendar variables and `printDatePeriod()` to prompt the download progression. 
+Well, this was the core routine which will be called by every report request at the main java function. Before going further, let's define a few global variables and two helpful methods: `updateRollCalendar()` will update the calendar variables and `printDatePeriod()` will prompt the download progression. 
 
 ```java
 public static String currentPath;    // path where our .class is executed (pwd)
@@ -117,7 +115,7 @@ private static void printDatePeriod(String periodType, String documentType)
 ```
 
 
-Fine. Let's have a look to the `main` function. The following snippet is headed by the calendar and paths definition and then 4 similar loops for scheduling daily, weekly, monthly and yearly reports. Note that every type of report has its own expiring date and no reports exist beyond your launching date. Obviously these 4 routine-loops could be grouped in a single method, but I decided to leave it as it is for the moment. On the contrary the differences between them could be more noticeable with this repetitive structure. To sum up this code just requests those non-expired reports that have NOT been downloaded yet and NOT saved at the `sourcePath`. 
+Fine. Let's have a look to the `main` function. The following snippet is headed by the calendar and paths definition and then 4 similar loops for scheduling daily, weekly, monthly and yearly reports. Note that every report type has its own expiring date and no reports exist beyond your launching date. Obviously these 4 routine-loops could be grouped in a single method, but I decided to leave it as it is for the moment. On the contrary, differences between them could be more noticeable with this repetitive structure. To sum up, this code just requests those non-expired reports that have NOT been downloaded yet and NOT saved at the `sourcePath`. 
 
 ```java
 public static void main(String[] args) throws IOException {
@@ -222,16 +220,16 @@ public static void main(String[] args) throws IOException {
 
 We're done! Only two last important requirements:   
 
-1. The `Autoingestion.class` and your let's call `generateScheduledReports.class` must lay together in the same path.   
-2. File's paths must not contain spaces. If so try to `String.replace` space characters as your shell could understand the command line executions along this script.   
+1. The `Autoingestion.class` and your let's name it `generateScheduledReports.class` must lay together in the same path.   
+2. File's paths must not contain spaces. If so, try to `String.replace` space characters as your shell could understand the command line executions along this script.   
 
-Once your `generateScheduledReports.class` has been successfully generated (some libraries must be imported bla bla bla...) run daily `$ java GenAppStoreSalesReports` with your favorite scheduled solution and please spend that saved time to leave your computer away, take the sun and fresh air! ;D 
+Once your `generateScheduledReports.class` has been successfully generated (some libraries must be imported bla bla bla...) run daily `$ java GenAppStoreSalesReports` with your favorite scheduled solution and please spend that saved time to leave your computer away, take sun and fresh air! ;D 
 
 Happy coding : ) 
 
 Coda1: if some of you smarty-pants wondered why the variable `sourcePath` is named like that and not something like `storagePath`, it is because that folder will be used as a source storage folder for generating charts later on, with *jfreechart* for instance. But that's another post. 
 
-Coda2: you can also have a look to [www.tonoamusic.com](www.tonoamusic.com).
+Coda2: you can also have a look at [valillon.art/tonoamusic](http://valillon.art/tonoamusic).
 
-Unfortunately the *TOnOa Music* has been discontinued. 
+Unfortunately the *TOnOa Music* app has been discontinued. 
 {: .notice--info}
