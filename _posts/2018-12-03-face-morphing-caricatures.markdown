@@ -31,7 +31,7 @@ This is my first post here and by coincidence it starts with an accident. A frie
 	</td></tr><tr><td valign="bottom" align="right" style="border:0px;">
 		<img src="{{site.baseurl}}/assets/caricatures/donald_trump_delaunay.jpg" width="143">
 	</td></tr></table>
-	<figcaption align="center">A Hillary Clinton's caricature morphed with the Donal Trump's facial expression.</figcaption>
+	<figcaption align="center">Hillary Clinton's caricature morphed with Donald Trump's facial expression.</figcaption>
 </div>
 
 ## The morphing dream
@@ -50,15 +50,15 @@ Back on Earth, digital morphing became popular due to multiple films and video c
 
 ## Let's morph it
 
-The [FaceMorph](https://github.com/valillon/FaceMorph) code performs automatically the following steps:		
-1. Facial landmarks recognition on both the origin and target faces ([Dlib](http://dlib.net)).	
+[FaceMorph](https://github.com/valillon/FaceMorph) performs automatically the following steps:		
+1. Facial landmarks recognition on both source and target images ([Dlib](http://dlib.net)).	
 2. Triangular [Delaunay](https://en.wikipedia.org/wiki/Delaunay_triangulation) segmentation.	
-3. [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) between the Delaunay triangles of both faces.
-4. [Alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing#Alpha_blending) on the paired triangles with a given transparency.
+3. [Affine transformation](https://en.wikipedia.org/wiki/Affine_transformation) between Delaunay triangles of both faces.
+4. [Alpha blending](https://en.wikipedia.org/wiki/Alpha_compositing#Alpha_blending) on paired triangles with a given transparency.
 
-To create a caricature effect, the alpha blend on it must be set to either the maximum or the minimum values in order to make completely appear one of the faces, and then the affine transformation must target the landmarks of the other face. 
+To create a caricature effect, the alpha blend on it must be set to either the maximum or the minimum values in order to completely make one of the faces appear, and then the affine transformation must target the landmarks of the other face. 
 
-A great choice for shaping funny caricatures is to pair faces with completely different facial dimensions between eyes, nose or mouth. Not only grins, but also disparate poses can generate crazy distortions too. 
+A great choice for shaping funny caricatures is to pair faces with completely different facial dimensions between the eyes, nose or mouth. Not only grins, but also disparate poses can generate crazy distortions too. 
 
 <div class="align-center" style="width: 50%">
 	<table>
@@ -69,7 +69,7 @@ A great choice for shaping funny caricatures is to pair faces with completely di
 	</td></tr><tr><td valign="bottom" align="right" style="border:0px;">
 		<img src="{{site.baseurl}}/assets/caricatures/hillary_clinton_delaunay.jpg" width="143">
 	</td></tr></table>
-	<figcaption align="center">A Donald Trump's caricature morphed with the Hillary Clinton's facial expression.</figcaption>
+	<figcaption align="center">Donald Trump's caricature morphed with Hillary Clinton's facial expression.</figcaption>
 </div>
 
 <div class="align-center" style="width: 50%">
@@ -81,10 +81,10 @@ A great choice for shaping funny caricatures is to pair faces with completely di
 	</td></tr><tr><td valign="bottom" align="right" style="border:0px;">
 		<img src="{{site.baseurl}}/assets/caricatures/velazquez_delaunay.jpg" width="130">
 	</td></tr></table>
-	<figcaption align="center">A Hillary Clinton's caricature morphed with the Velazquez's facial expression.</figcaption>
+	<figcaption align="center">Hillary Clinton's caricature morphed with Velazquez's facial expression.</figcaption>
 </div>
 
-In some cases however if the poses between the two faces are so distant, the morphing effect gets too much distorted or simply broken. That's the case when the two faces are looking at opposite directions or they are located at very far away relative locations in the image. For the first issue, an horizontal flip can make the trick, while for the second one, a fair enough head alignment towards the center can work fine. 
+In some cases, however, if the poses between the two faces are too distant, the morphing effect gets too distorted or simply broken. That's the case when the two faces are looking in opposite directions or they are in different places in the image. For the first issue, an horizontal flip can do the trick, while for the second one, a reasonable head alignment, towards the center, will work. 
 
 
 <div class="align-center" style="width: 100%">
@@ -104,11 +104,11 @@ In some cases however if the poses between the two faces are so distant, the mor
 		<img src="{{site.baseurl}}/assets/caricatures/van_gogh_delaunay.jpg" width="160">
 	</td></tr></table>
 	<figcaption align="center">
-		Caricatures of Van Gogh and Paul Goughin morphed with each other's facial expression. Note the Paul Goughin's self-portrait was originally heading to the right side of the paining.
+		Caricatures of Van Gogh and Paul Goughin morphed with each other's facial expression. Note the Paul Goughin's self-portrait was originally heading to the right side of the painting.
 	</figcaption>
 </div>
 
-Now we rise the score with a creepy series of disturbing faces. Note that some of them are limit cases in which some facial parts get too distorted, but still worked pretty good.
+Now we rise the score with a disturbing series of creepy faces. Note that some of them are extreme cases in which some facial parts get too distorted, but it still work pretty well.
 
 <div class="align-center" style="width: 100%">
 	<table>
@@ -127,7 +127,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 		<img src="{{site.baseurl}}/assets/caricatures/velazquez_delaunay.jpg" width="130">
 	</td></tr></table>
 	<figcaption align="center">
-		A couple of caricatures of Galileo Galilei morphed with the Hillary Clinton's (left) and Velazquez's (right) facial expressions.
+		A couple of caricatures of Galileo Galilei morphed with Hillary Clinton's (left) and Velazquez's (right) facial expressions.
 	</figcaption>
 </div>
 
@@ -141,7 +141,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 	</td></tr><tr><td valign="bottom" align="right" style="border:0px;">
 		<img src="{{site.baseurl}}/assets/caricatures/jim_carrey_delaunay.jpg" width="125">
 	</td></tr></table>
-	<figcaption align="center">A Velazquez's caricature morphed with the Jim Carrey's facial expression.</figcaption>
+	<figcaption align="center">Velazquez's caricature morphed with Jim Carrey's facial expression.</figcaption>
 </div>
 
 <div class="align-center" style="width: 50%">
@@ -153,7 +153,7 @@ Now we rise the score with a creepy series of disturbing faces. Note that some o
 	</td></tr><tr><td valign="bottom" align="right" style="border:0px;">
 		<img src="{{site.baseurl}}/assets/caricatures/jocker_delaunay.jpg" width="132">
 	</td></tr></table>
-	<figcaption align="center">A Batman's (Christian Bale) caricature with the Joker's (Heath Ledger) facial expression.</figcaption>
+	<figcaption align="center">Batman's (Christian Bale) caricature with the Joker's (Heath Ledger) facial expression.</figcaption>
 </div>
 
 That's all folks. Keep morphing and have fun.
