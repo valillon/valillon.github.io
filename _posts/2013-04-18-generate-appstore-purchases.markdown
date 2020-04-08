@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Java snippet for generating scheduled AppStore sales reports"
+title:  "Java Snippet for Generating Scheduled AppStore Sales Reports"
 excerpt: "This is an old post from Blogger, now migrated here, for generating AppStore purchases."
 date:   2013-04-18 11:00:00
 classes: wide

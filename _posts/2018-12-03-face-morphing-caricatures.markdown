@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Creating funny caricatures with automatic face morphing"
+title:  "Creating Funny Caricatures With Automatic Face Morphing"
 excerpt: "Some examples of facial expression transference between two faces with Dlib and OpenCV to automatically create facial caricatures."
 date: 2018-12-03 12:00:00
 classes: wide
