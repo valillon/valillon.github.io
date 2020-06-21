@@ -53,7 +53,7 @@ The large latin inscription of the iconic [Pantheon of Agripa](https://en.wikipe
 <!-- Yet successively refurbished over the years, especially in its interior. -->
 
 {% capture fig_img %}
-![Foo]({{ '/assets/writing/ddc8838f4a772e457eb177620b659322.gif' | relative_url }}){: .width-half .align-center}
+![Foo]({{ '/assets/writing/ddc8838f4a772e457eb177620b659322.gif' | relative_url }}){: .width-threequarters .align-center}
 {% endcapture %}
 <figure class="align-center">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
@@ -206,7 +206,7 @@ The life in the Ancient Egypt was profoundly affected by its funerary culture, r
 {% endcapture %}
 <figure class="align-center">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption align="center">Papyrus Ryerson, the <i>weighing of the heart</i> where, rather than the brain, the Egyptians believed was the source of wisdom. Horus and Anubis depicted in the company of a hybrid Maat, the goddess of Truth, depicted with an anthropomorphic body and a feather (symbol and hieroglyph for Maat) for her head. At the left, the big figure of Osiris, god of fertility, agriculture, and afterlife. Most hieroglyphs and horizontal the hieratic lines are clearly detected by the TextFCN. Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt</a>.</figcaption>
+  <figcaption align="center">Papyrus Ryerson (400-300 BC), the <i>weighing of the heart</i> where, rather than the brain, the Egyptians believed was the source of wisdom. Horus and Anubis depicted in the company of a hybrid Maat, the goddess of Truth, depicted with an anthropomorphic body and a feather (symbol and hieroglyph for Maat) for her head. At the left, the big figure of Osiris, god of fertility, agriculture, and afterlife. Most hieroglyphs and horizontal the hieratic lines are clearly detected by the TextFCN. Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt</a>.</figcaption>
 </figure>
 
 <!-- {% capture fig_img %}
@@ -223,7 +223,7 @@ The life in the Ancient Egypt was profoundly affected by its funerary culture, r
 {% endcapture %}
 <figure class="align-center">
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption align="center"> An <i>ushabti</i> of Ramesses IV (left), an inscribed funerary figurine to help the deceased harvest in the afterlife. A <i>stelophorous</i> statue (right), an adoration kneeled man praying for afterlife. The TextFCN responds actively on presence of these engraved hieroglyphs, although also horizontally arranged, distinct by far from Latin characters. Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt.</a> and <a href='https://commons.wikimedia.org/wiki/File:Ramesses_IV-N_438-IMG_8065-gradient.jpg'>Wikimedia</a>.</figcaption>
+  <figcaption align="center"> An <i>ushabti</i> of Ramesses IV (left), an inscribed funerary figurine to help the deceased harvest in the afterlife. A <i>stelophorous</i> statue 1295–1186 BC (right), an adoration kneeled man praying for afterlife. The TextFCN responds actively on presence of these engraved hieroglyphs, although also horizontally arranged, distinct by far from Latin characters. Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt.</a> and <a href='https://commons.wikimedia.org/wiki/File:Ramesses_IV-N_438-IMG_8065-gradient.jpg'>Wikimedia</a>.</figcaption>
 </figure>
 
 
@@ -232,12 +232,14 @@ The life in the Ancient Egypt was profoundly affected by its funerary culture, r
 <!-- Mesoamérica and Middle East and China. -->
 Together with the Ancient Egypt, the invention of writing took place far apart at the same time in three more places, namely Mesopotamia, China, and Mesoamerica. However, they had apparently different purposes. The earliest written texts from Mesopotamia (site of Uruk) were accountability records such as workforce counting or tax collection. In Egypt, the earliest texts were about ceremonies, in China about divination rituals, and the Mesoamerican hieroglyphs were inspired by religious beliefs.
 
-However, the four of them had to have a common starting point, an ignition spark which catalyzed the change, from figurative drawings like [rupestrian art](https://en.wikipedia.org/wiki/Cave_painting) (Paleolithic) and then [petrogliphs](https://en.wikipedia.org/wiki/Petroglyph) (Neolithic approx.) to [ideograms](https://en.wikipedia.org/wiki/Ideogram), and later become [pictograms](https://en.wikipedia.org/wiki/Pictogram). Evidence of intermediate stages are known as [proto-writing](https://en.wikipedia.org/wiki/Proto-writing) systems such as the tokens used to register different operations around 8000 BC in Middle East. This [didactic video](https://www.youtube.com/watch?v=a0jqMO63SUg) --- worths watching --- explains it plainly.
+However, the four of them had to have a common starting point, an ignition spark which catalyzed the change, from figurative drawings like [rupestrian art](https://en.wikipedia.org/wiki/Cave_painting) (Paleolithic) and then [petrogliphs](https://en.wikipedia.org/wiki/Petroglyph) (Neolithic approx.) to [ideograms](https://en.wikipedia.org/wiki/Ideogram), and later become [pictograms](https://en.wikipedia.org/wiki/Pictogram). Evidence of intermediate stages are known as [proto-writing](https://en.wikipedia.org/wiki/Proto-writing), the tokens used to register different operations around 8000 BC in Middle East or the [Naqada glyphs](https://en.wikipedia.org/wiki/Gerzeh_culture) in the 3rd millennium BC. This [didactic video](https://www.youtube.com/watch?v=a0jqMO63SUg) --- worths watching --- explains it plainly.
 
 Regardless of evidences, to understand why writing systems emerged it could be really explained by the great advances they brought, as the opening quote of this text beautifully describes.
 
 <!-- https://www.ancient-origins.net/news-history-archaeology/walk-amongst-petroglyphs-galicia-prehistoric-designs-trace-life-and-times-020780 -->
 <!-- https://themtnear.com/2020/05/legend-rock-petroglyph-site/ -->
+
+![Foo](/assets/writing/timeline.svg)
 
 # Bonus track: the art of composing like scripting
 
