@@ -1,0 +1,256 @@
+---
+layout: single
+title:  "A Particular Review of the History of Writing Under an AI Prism"
+excerpt: "An essay about writing systems throughout history and their common visual features detected with Latin-trained neural networks."
+date: 2020-06-01 09:01:02
+classes: wide
+tags: 
+    - writing systems
+    - script
+    - history
+    - Ancient Egypt
+    - hieroglyphics
+    - text detection
+    - Latin alphabet
+---
+
+<!-- Notices https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/ -->
+Work in progress
+{: .notice--primary}
+
+*Disclaimer: this is a daring experiment made of history, arts, and computer vision technology. Any possible misattribution or inappropriate lack of scientific rigor should be immediately quarantined to be saved from rational arguments.*
+{: .notice--info}
+
+*Warning: the following text contains a high dose of Wikipedia hyperlinks. Exercise the utmost restraint in its consumption.*
+{: .notice--warning}
+
+{% include figure image_path="assets/writing/IELTS-Writing-Assist-Portal.jpg" %}
+
+> "Writing is one of the most important inventions ever made by humans. By putting spoken language into visible, material form, people could for the first time store information and transmit it across time and across space. It meant that a person’s words could be recorded and read by others — decades, or even centuries later. It meant that people could send letters, instructions, or treaties to other people thousands of kilometers away. Writing was the world’s first true information technology, and it was revolutionary. The very ubiquity of writing in our civilization has made it seem like a natural, unquestioned part of our cultural landscape. Yet it was not always this way. Although anatomically modern humans have existed for about one hundred thousand years, writing is a relatively recent invention — just over five thousand years old. How and why did writing first appear?"
+
+--- Gil J. Stein in *[Visible Language, inventions of writing in the ancient middle east and beyond](https://oi.uchicago.edu/research/publications/oimp/oimp-32-visible-language-inventions-writing-ancient-middle-east-and)*.
+The University of Chicago, 2015.
+{: .text-right}
+
+The significance of writing is beautifully depicted in this quote. Personally, the research on the appearance of writing and how some writing systems evolved and diversified in other [alphabets](https://en.wikipedia.org/wiki/Alphabet) is simply fascinating. Reasons for evolution could be the transference of symbols between civilizations by cultural influence, trading and accountability registers, or script adaptation to the recording medium. Some cases are well documented, or at least deducible from little inscribed tokens or double messages innocently left in a stone statuette. However, other mysteries of the history of writing still remain secret waiting to be discovered.
+
+A particular adventure is proposed here, consisting on exploring and tracing back remaining visual features — if any — between derived scripts, specifically between the Latin script, its historical predecessors, and all the way back to the origin, the Egyptian hieroglyphs. That far? yes, an incredible long way back. After me explorers!
+
+# A note on text detection with convolutional networks
+
+[Artificial Neural Networks](https://en.wikipedia.org/wiki/Artificial_neural_network) have become probably the most exciting mathematical construction in the last decade. Although firstly proposed by W. McCulloch and W. Pitts in the 40s and later expanded by scientist like [Y. LeCun, Y. Bengio & G. Hinton](https://www.nature.com/articles/nature14539) at the turn of this Century, their widespread use did not explode until the increasing computing performance, huge storage capacity and tremendous data availability took place. Computer Vision --- or how to make computers see --- has radically benefit from it to accomplish tasks that just a few years ago would be unbelievable.
+
+Fully Convolutional Networks (FCN) analyze an image with millions of local operators --- or convolutional filters --- stacked on a series of increasingly narrower and deeper interconnected layers in order to detect highly abstract visual features. As a result, after a sophisticated [training procedure](https://en.wikipedia.org/wiki/Artificial_neural_network#Learning) with millions of images, such deep networks learn to automatically discover abstract patterns on images associated with complex objects, such as for instance the category *cat* in any of its multiple representations.
+
+Throughout this text, I used this [TextFCN](https://github.com/gombru/TextFCN), which was trained with hundreds of thousands of text instances with multiple Latin fonts from the [COCO-Text](https://bgshih.github.io/cocotext) dataset. It is important to understand that every alphabet by itself can also give rise to multiple [typography anatomies](https://www.toptal.com/designers/typography/typography-anatomy-infographic) --- usually in connection with a particular purpose --- which gives an idea of the generalization capacity for detection showed off by deep neural networks.
+
+
+# Classical antiquity: the Roman and Hellenic forefathers 
+
+One of the greatest empires of all times was the [Roman Empire](https://en.wikipedia.org/wiki/Roman_Empire), which ruled with firm hand about 5 centuries (27 BC - 476 AD) a vast amount of territories around the Mediterranean Sea and more distant lands, such as the whole Iberian Peninsula (Hispania), Britannia, or the Euphrates valley in Mesopotamia. The Roman regime would conduct some of the most darkest moments in history, but its domination was also made possible by means of important contributions on architecture, administration, law, language, or arts, which would had a profound influence on posterior civilizations until present days. A clear example was the propagation of the [Latin Alphabet](https://en.wikipedia.org/wiki/Latin), which would become the world's dominant writing system.
+
+The large latin inscription of the iconic [Pantheon of Agripa](https://en.wikipedia.org/wiki/Pantheon,_Rome) --- constructed between 27 BC – 14 AD in Rome --- reads *'M[arcus]·AGRIPPA·L[ucii]·F[ilius]·CO[n]S[ul]·TERTIUM·FECIT'*, meaning *'Marcus Agrippa, son of Lucius, made [this building] when consul for the third time'*. However, the current temple was built decades later, around 126 AD by order of [Hadrian](https://en.wikipedia.org/wiki/Hadrian). The rear part of the original [peripteros](https://en.wikipedia.org/wiki/Peripteros) temple was demolished and in its place a cylindrical building was erected behind the portico and culminated in an exceptional dome. As few buildings after the collapse of the Roman Empire, it rarely survived due to its continuous use as a Christian church. 
+<!-- Yet successively refurbished over the years, especially in its interior. -->
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/ddc8838f4a772e457eb177620b659322.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">The Pantheon of Agripa (27 BC - 126 AD, Rome) and the font at <a href='https://en.wikipedia.org/wiki/Piazza_della_Rotonda'>Piazza della Rotonda</a>. In this picture the large latin inscription highly activates the TextFCN — together with a few spurious detections. Source: pinned on <a href='https://www.pinterest.es/pin/584201382892206562/'>Pinterest</a>.</figcaption>
+</figure>
+
+Western thought has firmly assumed that Classical Greece is the cradle of its civilization in many aspects. Certainly, the influence of Greek culture, by means of remarkable philosophies, mathematicians, sculptors, architects, and writers, left a significant mark in Western culture. However, popular lore ignores, and some academics absently look the other way on recognizing Western roots beyond the European boundaries, to the Near Middle East or even Northern Africa. For instance, a large [Greek community in Egypt](https://en.wikipedia.org/wiki/Greeks_in_Egypt) used to travel and stay in the land of pharaohs, some to learn [mathematics](https://en.wikipedia.org/wiki/Ancient_Egyptian_mathematics), [architecture](https://en.wikipedia.org/wiki/Ancient_Egyptian_architecture) or [medicine](https://en.wikipedia.org/wiki/Ancient_Egyptian_medicine). This could explain that many of the [Egyptian literature]((https://en.wikipedia.org/wiki/Ancient_Egyptian_literature)) curiously recalls some of the great antic Greek narratives and myths, and not to mention the strong resemblance between their [deities](https://en.wikipedia.org/wiki/Ancient_Egyptian_deities) and [festivities](https://en.wikipedia.org/wiki/Sed_festival).
+
+Regarding the [Greek Alphabet](https://en.wikipedia.org/wiki/Greek_alphabet), most of its characters were borrowed from the Phoenicians — as many other contemporary alphabets did. Besides the palpable evolution of shapes, one of the most important difference --- and a historical milestone --- is that the former adapted some letters to represent vowels, non-present in the latter or previous alphabets. Furthermore, the Greek alphabet gave rise to numerous derived scripts, not only Latin, but also Cyrillic, Runic, and Coptic.
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/2246397_img_20170208_wa0004.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Herm of Socrates (ΣΩΚΡΑΤΗΣ) — a 2nd century AD copy of the 4th century BC original. The inscription reads a quote recorded by Plato from Socrates' speech in prison: "I am not for the first time but always a man who follows nothing but the reason which on consideration seems to be the best". In this image, the TextFCN actively detects most of the chiseled text, while interestingly the philosopher’s name is almost ignored. Although Greek letters differ from Latin, yet they share many graphical features, not difficult to be detected by the neural network. Source: <a href='http://www.eudia.org/new-book-socrates-and-the-socratic-dialogue'>Socrates and the Socratic Dialogue</a>.</figcaption>
+</figure>
+
+<!-- Other sources https://guides.library.duq.edu/c.php?g=605283&p=4214778 -->
+
+<!-- {% capture fig_img %}
+![Foo]({{ '/assets/writing/cippo_di_Perugia.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Source: https://en.wikipedia.org/wiki/Etruscan_civilization.</figcaption>
+</figure> -->
+<!-- http://conocimientosantiguos.blogspot.com/2015/03/el-liber-linteus-una-momia-egipcia.html -->
+
+# Phoenician: one alphabet to inspire them all
+
+With the decline of most great empires at the [Late Bronze Age](https://en.wikipedia.org/wiki/Bronze_Age), the [Phoenician](https://en.wikipedia.org/wiki/Phoenicia) civilization emerged in the [Levant](https://en.wikipedia.org/wiki/Levant) region predominantly between 1500 and 300 BC. They became sailors in the first place and rapidly expanded across the Mediterranean influence area, going down in history as audacious explorers and clever merchants. Precisely, their extensive trading activities stimulated the exchange of knowledge between prominent and influential civilizations such as Greece, Egypt, and Mesopotamia. Among all exchange items, the [Phoenician Alphabet](https://en.wikipedia.org/wiki/Phoenician_alphabet) was of paramount importance. The development of shapes of the Phoenician letters over the course of the 1st millennium resulted in diverse alphabets such as [Aramaic](https://en.wikipedia.org/wiki/Aramaic_alphabet) and [Archaic Greek](https://en.wikipedia.org/wiki/Archaic_Greek_alphabets), which over centuries diversified into contemporary widespread alphabets such as Hebrew, Arabic, Cyrillic or Latin. The Phoenician alphabet apparently provided stabilization in terms of direction and orientation of the letters and the direction of writing (right to left).
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/1600px-Paris_-_Musee_du_Louvre_31289612892_small.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">The <a href='https://en.wikipedia.org/wiki/Eshmunazar_II_sarcophagus'>sarcophagus of Eshmunazar II</a> (Louvre), created likely in Egypt in the early 5th century BC and unearthed in 1855 near Sidon. The inscription is the first discovered in the Phoenician language from the Levant region. Interestingly, the letters <i>bēt</i>, <i>dālet</i>, and <i>rēš</i> bear a close resemblance with the figure <i>9</i> (nine), which probably causes high activation peaks in the TextFCN. Likewise, the drops along the ornamented valance also spike energetic activations, probably mistaken for the figure <i>0</i> (zero). Source: <a href='https://commons.wikimedia.org/wiki/File:Paris_-_Musée_du_Louvre_(31289612892).jpg'>Wikimedia</a>.</figcaption>
+</figure>
+
+# Proto-Canaanite: the missing link
+
+The profuse and dilated history of the Ancient Egypt --- nearly across 3 millennials, easy to say --- cannot be conceived without its intimate and mostly turbulent relationship with its neighboring kingdoms. The Egyptian eastern frontier fluctuated over the centuries, between what now is Gaza and the present Syria. It was caused by recurrent military conflicts with the Asiatics --- as Egyptians used to call any civilization coming from the east --- such as the great [Assyrian Empire](https://en.wikipedia.org/wiki/Assyria) or the mighty [Hittite Empire](https://en.wikipedia.org/wiki/Hittites). Not without reason, the Nile Delta, with its open marshlands rich in fish, fowl and fertile crops, was an attractive territory to conquer or defend.
+
+Among all conflicts, the [Battle of Qadesh](https://en.wikipedia.org/wiki/Battle_of_Kadesh) about 1274 BC between the forces of the renowned and long-lived [Ramesses II](https://en.wikipedia.org/wiki/Ramesses_II) and his counterpart the Hittite king [Muwatalli II](https://en.wikipedia.org/wiki/Muwatalli_II), has gone down in the annals of ancient history in the form of numerous texts and wall reliefs. That confrontation eventually would lead in 1269 BC to the earliest known parity [peace-treaty](https://en.wikipedia.org/wiki/Egyptian–Hittite_peace_treaty) between two great powers.
+
+In this border area, [Canaan](https://en.wikipedia.org/wiki/Canaan) --- an umbrella-term used to refer a semitic civilization and region along the Near East Mediterranean coast --- acquired particular importance during the Late Bronze Age with the [Amarna period](https://en.wikipedia.org/wiki/Amarna_period) (14th century BC). An evidence of prolonged boiling activities in this region is the [King's Highway](https://en.wikipedia.org/wiki/King%27s_Highway_(ancient)), an ancient trade route sprinkled with a series of fortified structures whose old remains last until today.
+
+In this active context, a modest reddish sandstone sphinx --- dated 1800 BC (c.) and discovered by Sir W. M. Flinders Petrie around 1904 in the ruins of a Temple of Hathor at [Serabit el-Khadim](https://en.wikipedia.org/wiki/Serabit_el-Khadim), an antic turquoise mining area in the southwest Sinai Peninsula --- is sometimes considered the Rosetta Stone of the [Proto-Sinaitic script](https://en.wikipedia.org/wiki/Proto-Sinaitic_script). It turns out that the same message was carved on the sphinx in both languages. Thus, the right shoulder hieroglyphs read 'Beloved of Hathor [mistress] of turquoise' and the left base --- deciphered by [Sir Alan Gardiner](https://en.wikipedia.org/wiki/Alan_Gardiner) in 1916 -- reads 'to [the] Lady', that is Hathor. The Proto-Sinaitic symbols were invented --- as hypothesized by John and Deborah Darnell in 1999 --- by Egyptian scribes to allow them to communicate with Asiatics, especially during trade transactions. The resultant consonantal alphabet, which adapted the hieroglyphic script but Phoenician phonetics, observed over the years a gradual evolution away from purely pictographic shapes to more abstract and stylized forms. It was later adopted by the Canaaneans and hence renamed Proto-Canaanite.
+
+This sphinx presumably provides the missing link between the hieroglyphic or hieratic signs and the Canaanite writing, which would be adopted by the Phoenicians several centuries later.
+
+<!-- https://www.baslibrary.org/biblical-archaeology-review/36/2/6
+http://www.codex99.com/typography/11.html -->
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/1232449001_1232614001_small3.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">A reddish sandstone sphinx 1800 BC (c.) from Serabit el-Khadim, which helped to decipher the Proto-Sinaitic script and presumably resolve the missing link between the Egyptian hieroglyphs and occidental alphabets. Despite having quite different shapes and layout from Latin, most carved Proto-Sinaitic symbols can be detected by the TextFCN, even some hieroglyphic parts. Source: <a href='https://www.britishmuseum.org/collection/object/Y_EA41748'>British Museum</a>.</figcaption>
+</figure>
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/proto-sinaitic_correspondences.jpg' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Six examples of possible correspondences between Hieroglyphs, Proto-Sinaitic, Phoenician, and derived script systems. Source: <a href='https://en.wikipedia.org/wiki/Proto-Sinaitic_script'>Wikipedia</a>.</figcaption>
+</figure>
+
+
+# Ancient Egypt: the origin of many
+
+The transformation of the Ancient Egypt during nearly 3 millennia (3150-332 BC) walked over three splendor kingdoms and three intermediate periods of instability, coming to an end after the reformed and turbulent [Ptolemaic Kingdom](https://en.wikipedia.org/wiki/Ancient_Egypt#Ptolemaic_period_(332–30_BC)) (332-30 BC). Few empires were able to vigorously reborn so many times from severe crisis though. The [Old Kingdom](https://en.wikipedia.org/wiki/Old_Kingdom_of_Egypt) is also known as the "Age of the Pyramids" --- never again constructed of that size or at least so resilient to remain upright until the present time --- when fundamental cultural and religious conceptions were established and accompanied the empire all along its lifespan. The [Middle Kingdom](https://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt) is considered ancient Egypt's Classical Age during which some of its greatest works of art and literature were produced, such as [The Tale of the Shipwrecked Sailor](https://en.wikipedia.org/wiki/Tale_of_the_Shipwrecked_Sailor) and [The Story of Sinuhe](https://en.wikipedia.org/wiki/Story_of_Sinuhe). The [New Kingdom](https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt) was reigned by renowned kings such as the Thutmosesi, the Ramessesi, the Amenhoteps, Tutankhamun and the brave queens Hatshepsut and Nefertiti, most of them buried in the fascinating tombs of the so-called [Valley of the Kings](https://en.wikipedia.org/wiki/Valley_of_the_Kings).
+
+To reconstruct the history of the [Egyptian Dynasties](https://en.wikipedia.org/wiki/Dynasties_of_Ancient_Egypt), the *Aegyptiaca* of [Manetho](https://en.wikipedia.org/wiki/Manetho) was a key document. In it, the Ptolemaic priest enumerates an exhaustive king-list from the Old to the New Kingdoms. Apart from it, some important artifacts from different Kingdoms have survived to compare with, such as the [Palermo Stone](https://en.wikipedia.org/wiki/Palermo_stone), the [Abydos King List](https://en.wikipedia.org/wiki/Abydos_King_List), or the [Turin Royal Canon](https://en.wikipedia.org/wiki/Turin_Royal_Canon).
+
+<!-- the [List of Karnak](https://en.wikipedia.org/wiki/Karnak_king_list) (New Kingdom) -->
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/Abhandlungen_der_Koniglich_Preussischen_Akademie_der_Wissenschaften_aus_dem_Jahre_1902_16765759871.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Palermo Stone, one of seven surviving fragments of a stele known as the Royal Annals of the Old Kingdom. Despite being highly figurative and vertically arranged, the TextFCN is able to detect multiple hieroglyphic symbols as text. Curiously among them, quite a few reign numbers (groups of tiny vertical ticks) and some animal figures inside oval cartouches (used to inscribe kings' names). More <a href='http://www.ancientportsantiques.com/wp-content/uploads/Documents/PLACES/Egypt-Libya/PalermoStone-Hsu2010.pdf'>Info</a>. Source: <a href='https://en.wikipedia.org/wiki/Palermo_Stone'>Wikipedia</a>. </figcaption>
+</figure>
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/abydoskings.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Abydos King List, in the burial site of Osiris and the first pharaohs. The wall is covered with cartouches, oval carvings containing hieroglyphics to represent the pharaohs' names. The TexFCN fails on interpreting these hieroglyphs as text. Certainly, the close-up view and casted shadows make difficult to understand this pictographic list as text. Even so, several twiggy symbols can be detected. Source: <a href='https://www.thenotsoinnocentsabroad.com/blog/the-serene-spirituality-of-abydos-temple'>thenotsoinnocentsabroad</a>.</figcaption>
+</figure>
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/turin_royal_canon_hieratic2.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center"> Turin Royal Canon, a hieratic papyrus with the most extensive list available of Egyptian kings, and the basis for most chronology before the reign of Ramesses II. The hieratic symbols are richly detected by the TextFCN, even though they largely differ from Latin shapes. Source: <a href='https://pharaoh.se/royal-canon-of-turin'>pharaoh.se</a>.</figcaption>
+</figure>
+
+## Hieroglyphs, Hieratic, Demotic, and Coptic writings
+
+The Egyptians used four writing systems for three distinct [spoken languages](https://en.wikipedia.org/wiki/Egyptian_language). The [Hieroglyphs](https://en.wikipedia.org/wiki/Egyptian_hieroglyphs) and [Hieratic](https://en.wikipedia.org/wiki/Hieratic) were used to annotate the traditional egyptian languages. [Demotic](https://en.wikipedia.org/wiki/Demotic_(Egyptian)) was used to annotate the second phase Egyptian or Neoegyptian from the mid-end of the New Kingdom. Finally, the [Coptic](https://en.wikipedia.org/wiki/Coptic_language) system was used during the Greco-Roman era to annotate the Egyptian language spoken at that time with the Greek alphabet --- mind the gap --- a derived alphabet from which centuries ago left the land of the pyramids through the Sinai Peninsula. The autochthon scripts (Hieroglyphic, Hieratic, and Demotic) are complex consonant writings (no written vowels) using not only phonetic, but also thousands of lexical and semantic symbols. The Hieroglyphs are a [pictographic](https://en.wikipedia.org/wiki/Pictogram) system engraved principally in stone, but also in wood and ivory, for monumental, royal, and funerary usages. While Hieratic and Demotic are cursive scripts --- derived one from the other --- to quickly write hieroglyphs in ink, on papyrus or ostracon, for literature and administrative purposes. 
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/600px-Contract-IMG_6282_DemoticWiki.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Papyrus from the Ptolemaic era with a contract in demotic writing. Despite barely looking like Latin shapes, this Demotic text can be entirely detected by the TextFCN. Probably, the horizontally arranged layout stimulated neural activations. Source: <a href='https://commons.wikimedia.org/wiki/File:Contract-IMG_6282.JPG'>Wikimedia</a>.</figcaption>
+</figure>
+
+Therefore, despite being a long-lasting empire and consequently many of the archeological assets were not only deteriorated but also robbed and destroyed — not rarely by coetaneous individuals — a great part of the history of the Ancient Egypt has arrived to us by means of its written word. Hence, for any egyptologist the study of the hieroglyphic writing and derived scripts is essential. Furthermore, not few linguistics take interest in the writing systems of the Nile's Valley in account of the unique opportunity to study a language evolution over 5000-year of usage.
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/640px-Hieratic_script_limestone.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Hieratic script on a limestone slab, an exercise by a schoolboy in Ancient Egypt copying four letters to the vizier Khay. One letter from an overseer working on the royal tomb asks for various pigments and "old rags for the lamps". The TextFCN is able to spike activations over most of the limestone surface. Again, the arrangement in horizontal lines could have helped the detection. Interestingly, some of the strongest responses resemble the Western-adopted Arabic numbers. Source: <a href='https://commons.wikimedia.org/wiki/File:Heratic_script_limestone.jpg'>Wikimedia</a>.</figcaption>
+</figure>
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/374952001_small.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Redware pottery dish used as coptic ostracon. The low contrasted black ink still allows the TextFCN to partially detect letters. Source: <a href='https://www.britishmuseum.org/collection/object/Y_EA27718_1'>British Museum</a>.</figcaption>
+</figure>
+
+<!-- {% capture fig_img %}
+![Foo]({{ '/assets/writing/bookofdeath8.gif' | relative_url }}){: .width-half .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">An extract of ferryman spell BD 99B (New Kingdom) from a French travel narrative of 1653 (after La Boullaye Le Gouz 1653, p. 357) Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt.</a>.</figcaption>
+</figure> -->
+
+## The Book of the Death
+
+The life in the Ancient Egypt was profoundly affected by its funerary culture, rituals and beliefs. Guided by such devotion, they constructed colossal monuments and wonderful crafted artworks. The *Book of Coming Forth by Day* --- commonly known as [Book of the Death](https://en.wikipedia.org/wiki/Book_of_the_Dead) --- is a compendium of funerary texts consisting on a series of magic spells to accompany the deceased into the afterlife. Generally written on papyrus, these documents were conveniently placed in the coffin or burial chamber. This "book" was used from the beginning of the New Kingdom and developed from the oldest [Pyramid Texts](http://mafssaqqara.wixsite.com/mafs/textes-des-pyramides) and [Coffin Texts](https://en.wikipedia.org/wiki/Coffin_Texts). The finest example we have of it is the [Papyrus of Ani](https://en.wikipedia.org/wiki/Papyrus_of_Ani). Another artifact, found by thousands along the Nile Valley, are the [Ushabti](https://en.wikipedia.org/wiki/Ushabti), funerary figurines used throughout all of Ancient Egypt history to represent servants for the deceased to do harvest and manual labor in the afterlife.
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/bookofdeath3.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Papyrus Ryerson, the <i>weighing of the heart</i> where, rather than the brain, the Egyptians believed was the source of wisdom. Horus and Anubis depicted in the company of a hybrid Maat, the goddess of Truth, depicted with an anthropomorphic body and a feather (symbol and hieroglyph for Maat) for her head. At the left, the big figure of Osiris, god of fertility, agriculture, and afterlife. Most hieroglyphs and horizontal the hieratic lines are clearly detected by the TextFCN. Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt</a>.</figcaption>
+</figure>
+
+<!-- {% capture fig_img %}
+![Foo]({{ '/assets/writing/684647001.gif' | relative_url }}){: .align-center}
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center">Papyrus of Ani. Source: British Museum.</figcaption>
+</figure> -->
+
+{% capture fig_img %}
+<!-- ![Foo]({{ '/assets/writing/bookofdeath10.gif' | relative_url }}){: .width-third} -->
+![Foo]({{ '/assets/writing/Ramesses_IV-N_438-IMG_8065-gradient.gif' | relative_url }}){: .width-sidebyside} ![Foo]({{ '/assets/writing/bookofdeath2.gif' | relative_url }}){: .width-sidebyside} 
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center"> An <i>ushabti</i> of Ramesses IV (left), an inscribed funerary figurine to help the deceased harvest in the afterlife. A <i>stelophorous</i> statue (right), an adoration kneeled man praying for afterlife. The TextFCN responds actively on presence of these engraved hieroglyphs, although also horizontally arranged, distinct by far from Latin characters. Source: <a href='https://oi.uchicago.edu/research/publications/oimp/oimp-39-book-dead'>Book of Death: Becoming God in Ancient Egypt.</a> and <a href='https://commons.wikimedia.org/wiki/File:Ramesses_IV-N_438-IMG_8065-gradient.jpg'>Wikimedia</a>.</figcaption>
+</figure>
+
+
+# A closing note on the origins of writing
+
+<!-- Mesoamérica and Middle East and China. -->
+Together with the Ancient Egypt, the invention of writing took place far apart at the same time in three more places, namely Mesopotamia, China, and Mesoamerica. However, they had apparently different purposes. The earliest written texts from Mesopotamia (site of Uruk) were accountability records such as workforce counting or tax collection. In Egypt, the earliest texts were about ceremonies, in China about divination rituals, and the Mesoamerican hieroglyphs were inspired by religious beliefs.
+
+However, the four of them had to have a common starting point, an ignition spark which catalyzed the change, from figurative drawings like [rupestrian art](https://en.wikipedia.org/wiki/Cave_painting) (Paleolithic) and then [petrogliphs](https://en.wikipedia.org/wiki/Petroglyph) (Neolithic approx.) to [ideograms](https://en.wikipedia.org/wiki/Ideogram), and later become [pictograms](https://en.wikipedia.org/wiki/Pictogram). Evidence of intermediate stages are known as [proto-writing](https://en.wikipedia.org/wiki/Proto-writing) systems such as the tokens used to register different operations around 8000 BC in Middle East. This [didactic video](https://www.youtube.com/watch?v=a0jqMO63SUg) --- worths watching --- explains it plainly.
+
+Regardless of evidences, to understand why writing systems emerged it could be really explained by the great advances they brought, as the opening quote of this text beautifully describes.
+
+<!-- https://www.ancient-origins.net/news-history-archaeology/walk-amongst-petroglyphs-galicia-prehistoric-designs-trace-life-and-times-020780 -->
+<!-- https://themtnear.com/2020/05/legend-rock-petroglyph-site/ -->
+
+# Bonus track: the art of composing like scripting
+
+[Pepe Gimeno](http://www.pepegimeno.com/?language=en) is a prestigious graphic and typography designer whose work is so intimately tied to the reuse of natural and artificial waste, hazardously found, but carefully balanced in his compositions. In his work, there is the recurrent idea of creating script-like compositions of beautiful harmony. By observing, it becomes evident that there must be some latent features in common between most or even all existing writing systems. Such common features might be related with the ability to provide a right reading, by means of salient shapes and a clear path to read one symbol after the other.
+
+{% capture fig_img %}
+![Foo]({{ '/assets/writing/pepegimeno1.gif' | relative_url }}){: .width-sidebyside} ![Foo]({{ '/assets/writing/pepegimeno2.gif' | relative_url }}){: .width-sidebyside} 
+{% endcapture %}
+<figure class="align-center">
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption align="center"> A couple of Pepe Gimeno artworks. Ch. 2. Writing. 2003 Series Hushed Writing. Plant and marine residues, bricks and stones. In spite of not being real alphabets, the artist achieves some creative shapes to simulate characters and kind of scripting layouts, which highly activates the TextFCN output. Interestingly, not all placements or orientations respond with the same intensity. Source: <a href='http://www.pepegimeno.com/en'>pepegimeno.com</a>.</figcaption>
+</figure>
+
+<!-- [Timeline](https://web.archive.org/web/20041011231449/http://www.ancientscripts.com/ws_timeline.html) -->
+
+Thanks for reading!
