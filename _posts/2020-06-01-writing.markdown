@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "A Particular Review of the History of Writing Under an AI Prism"
+title:  "A Particular Review of the History of Writing Through an AI Prism"
 excerpt: "An essay about writing systems throughout history and their common visual features detected with Latin-trained neural networks."
 date: 2020-06-01 09:01:02
 classes: wide
@@ -15,16 +15,13 @@ tags:
 ---
 
 <!-- Notices https://mmistakes.github.io/minimal-mistakes/docs/utility-classes/ -->
-Work in progress
-{: .notice--primary}
 
 *Disclaimer: this is a daring experiment made of history, arts, and computer vision technology. Any possible misattribution or inappropriate lack of scientific rigor should be immediately quarantined to be saved from rational arguments.*
 {: .notice--info}
-
 *Warning: the following text contains a high dose of Wikipedia hyperlinks. Exercise the utmost restraint in its consumption.*
 {: .notice--warning}
 
-{% include figure image_path="assets/writing/IELTS-Writing-Assist-Portal.jpg" %}
+{% include figure image_path="/assets/writing//handWristPain-939030682-770x553-745x490.jpg" %}
 
 > "Writing is one of the most important inventions ever made by humans. By putting spoken language into visible, material form, people could for the first time store information and transmit it across time and across space. It meant that a person’s words could be recorded and read by others — decades, or even centuries later. It meant that people could send letters, instructions, or treaties to other people thousands of kilometers away. Writing was the world’s first true information technology, and it was revolutionary. The very ubiquity of writing in our civilization has made it seem like a natural, unquestioned part of our cultural landscape. Yet it was not always this way. Although anatomically modern humans have existed for about one hundred thousand years, writing is a relatively recent invention — just over five thousand years old. How and why did writing first appear?"
 
