@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "A Particular Review of the History of Writing Through an AI Prism"
-excerpt: "An essay about writing systems throughout history and their common visual features detected with Latin-trained neural networks."
+title:  "A Particular Review of the History of Writing Through an AI Prism: Saliency and Prevalence in Derived Scripts"
+excerpt: "An essay about writing systems throughout history and their shared visual features detected with neural networks exclusively trained with the Latin alphabet."
 date: 2020-06-01 09:01:02
 classes: wide
 tags: 
@@ -32,7 +32,10 @@ The University of Chicago, 2015.
 
 The quote above beautifully depicts the significance of writing. Personally, the research on the appearance of writing and how some writing systems evolved and diversified in other [alphabets](https://en.wikipedia.org/wiki/Alphabet) is simply fascinating. Reasons for evolution could be the transference of symbols between civilizations by cultural influence, trading and accountability registers, or script adaptation to the recording medium. Some cases are well documented, or at least deducible from little inscribed tokens or double messages innocently left in a stone statuette. However, other mysteries of the history of writing still remain secret waiting to be discovered.
 
-A particular adventure is proposed here, consisting on exploring and tracing back remaining visual features — if any — between derived scripts, specifically between the Latin script, its historical predecessors, and all the way back to the origin, the Egyptian hieroglyphs. That far? Sure! an incredible long way back... After me explorers!
+In the evolution of writing systems over centuries few characters remained intact for a long time, while many mutated in shape, others simply didn't prevailed. In terms of visual perception, a possible question is to what extent some visual features are shared between derived scripts. For instance, *how much is preserved by the Latin alphabet from any of its scripting ancestors?* Or  --- in a triple somersault with six pirouettes --- *Do any special geometry or hidden layouts exist which induce certain sign marks to be recognized as scripting?*
+
+A particular adventure is proposed here. It consists on exploring and tracing back remaining visual features, if any, between the Latin script, its historical ancestors, and all the way back to the origin, the Egyptian hieroglyphs. That far? Sure! an incredible long way back... After me explorers!
+
 
 # A note on text detection with convolutional networks
 
@@ -40,7 +43,7 @@ A particular adventure is proposed here, consisting on exploring and tracing bac
 
 In particular, Fully Convolutional Networks (FCN) perform image analysis with millions of local operators --- or convolutional filters --- stacked on a series of increasingly narrower and deeper interconnected layers, resulting in highly abstract visual features. As a result, after a sophisticated [training procedure](https://en.wikipedia.org/wiki/Artificial_neural_network#Learning) with millions of images, such deep networks learn abstract patterns on images associated with complex objects, such as for instance the category *cat* in any of its multiple representations.
 
-Throughout this text, I used this [TextFCN](https://github.com/gombru/TextFCN) trained on the [COCO-Text](https://bgshih.github.io/cocotext) dataset with hundreds of thousands of Latin text instances. It is important to understand that every alphabet by itself can also give rise to multiple [typography anatomies](https://www.toptal.com/designers/typography/typography-anatomy-infographic) --- usually in connection with a particular purpose --- which gives an idea of the generalization capacity for detection showed off by deep neural networks.
+Throughout this article, I used this [TextFCN](https://github.com/gombru/TextFCN) trained on the [COCO-Text](https://bgshih.github.io/cocotext) dataset with hundreds of thousands text instances, exclusively Latin characters but multiple fonts. It is important to understand that every alphabet by itself can also give rise to multiple [typography anatomies](https://www.toptal.com/designers/typography/typography-anatomy-infographic) --- usually in connection with a particular purpose. The detection of highly variable Latin characters and texts performed by the TextFCN gives an idea of the generalization and therefore abstraction capacity showed off by deep neural networks.
 
 
 # Classical antiquity: the Roman and Hellenic forefathers 
@@ -230,9 +233,9 @@ The life in the Ancient Egypt was profoundly affected by its funerary culture, r
 <!-- Mesoamérica and Middle East and China. -->
 Together with the Ancient Egypt, the invention of writing took place far apart at the same time in three more places, namely Mesopotamia, China, and Mesoamerica. However, they had apparently different purposes. The earliest written texts from Mesopotamia (site of Uruk) were accountability records such as workforce counting or tax collection. In Egypt, the earliest texts were about ceremonies, in China about divination rituals, and the Mesoamerican hieroglyphs were inspired by religious beliefs.
 
-However, the four of them had to have a common starting point, an ignition spark which catalyzed the change, from figurative drawings like [rupestrian art](https://en.wikipedia.org/wiki/Cave_painting) (Paleolithic) and then [petrogliphs](https://en.wikipedia.org/wiki/Petroglyph) (Neolithic approx.) to [ideograms](https://en.wikipedia.org/wiki/Ideogram), and later become [pictograms](https://en.wikipedia.org/wiki/Pictogram). Evidence of intermediate stages are known as [proto-writing](https://en.wikipedia.org/wiki/Proto-writing), the tokens used to register different operations around 8000 BC in Middle East, or the [Naqada glyphs](https://en.wikipedia.org/wiki/Gerzeh_culture) in the 3rd millennium BC. This [didactic video](https://www.youtube.com/watch?v=a0jqMO63SUg) --- worths watching --- explains it plainly.
+However, the four of them had to have a common starting point, an ignition spark which catalyzed the change, from figurative drawings like [rupestrian art](https://en.wikipedia.org/wiki/Cave_painting) (Paleolithic) and then [petrogliphs](https://en.wikipedia.org/wiki/Petroglyph) (Neolithic approx.) to [ideograms](https://en.wikipedia.org/wiki/Ideogram), and later become [pictograms](https://en.wikipedia.org/wiki/Pictogram). Evidence of intermediate stages are known as [proto-writing](https://en.wikipedia.org/wiki/Proto-writing), the tokens used to register different operations around 8000 BC in Middle East, or the [Naqada glyphs](https://en.wikipedia.org/wiki/Gerzeh_culture) in the 3rd millennium BC. This NativLang's [didactic video](https://www.youtube.com/watch?v=a0jqMO63SUg) and G.Von Petzinger's [TED Talk](https://www.ted.com/talks/genevieve_von_petzinger_why_are_these_32_symbols_found_in_ancient_caves_all_over_europe) explain in few minutes a millennia-long evolution process --- both worth watching.
 
-Regardless of evidences, to understand why writing systems emerged it could be explained in fact by the great advances they really brought, as the opening quote of this text beautifully describes.
+Regardless of evidences, the real understanding of why writing systems emerged could be in fact explained by the great advances they really brought, as beautifully described by the opening quote in this article.
 
 <!-- https://www.ancient-origins.net/news-history-archaeology/walk-amongst-petroglyphs-galicia-prehistoric-designs-trace-life-and-times-020780 -->
 <!-- https://themtnear.com/2020/05/legend-rock-petroglyph-site/ -->
@@ -241,7 +244,9 @@ Regardless of evidences, to understand why writing systems emerged it could be e
 
 # Bonus track: the art of composing like scripting
 
-[Pepe Gimeno](http://www.pepegimeno.com/?language=en) is a prestigious graphic and typography designer whose work is so intimately tied to the reuse of natural and artificial waste, hazardously found, but carefully balanced in his compositions. In his work, there is the recurrent idea of creating script-like compositions of beautiful harmony. By observing, it becomes evident that there must be some latent features in common between most or even all existing writing systems. Such common features might be related with the ability to provide a right reading, by means of salient shapes and a clear path to read one symbol after the other.
+[Pepe Gimeno](http://www.pepegimeno.com/?language=en) is a prestigious graphic and typography designer whose work is so intimately tied to the reuse of natural and artificial waste, hazardously found, but carefully balanced in his compositions. In his work, there is the recurrent idea of creating script-like compositions of beautiful harmony. 
+
+By observing, it becomes evident that there must be some latent features shared between most, if not all, existing writing systems. Such common features might be connected with readability, by means of not only salient and distinguishable shapes, but also indicating clear paths to be able to read one symbol after the other.
 
 {% capture fig_img %}
 ![Foo]({{ '/assets/writing/pepegimeno1.gif' | relative_url }}){: .width-sidebyside} ![Foo]({{ '/assets/writing/pepegimeno2.gif' | relative_url }}){: .width-sidebyside} 
