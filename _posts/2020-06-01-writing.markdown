@@ -43,7 +43,7 @@ A particular adventure is proposed here. It consists on exploring and tracing ba
 
 In particular, Fully Convolutional Networks (FCN) perform image analysis with millions of local operators --- or convolutional filters --- stacked on a series of increasingly narrower and deeper interconnected layers, resulting in highly abstract visual features. As a result, after a sophisticated [training procedure](https://en.wikipedia.org/wiki/Artificial_neural_network#Learning) with millions of images, such deep networks learn abstract patterns on images associated with complex objects, such as for instance the category *cat* in any of its multiple representations.
 
-Throughout this article, I used this [TextFCN](https://github.com/gombru/TextFCN) trained on the [COCO-Text](https://bgshih.github.io/cocotext) dataset with hundreds of thousands of text instances, exclusively Latin characters but multiple fonts. It is important to understand that every alphabet by itself give also rise to multiple [typography anatomies](https://www.toptal.com/designers/typography/typography-anatomy-infographic) --- usually in connection with a particular purpose. The detection of highly variable Latin characters and texts previously shown by the TextFCN gives an idea of the generalization and therefore abstraction capacity showed off by deep neural networks.
+Throughout this article, I used this [TextFCN](https://github.com/gombru/TextFCN) trained **exclusively with Latin characters** from the [COCO-Text](https://bgshih.github.io/cocotext) dataset with hundreds of thousands of text instances and multiple fonts. It is important to understand that every alphabet by itself may give rise also to multiple [typography anatomies](https://www.toptal.com/designers/typography/typography-anatomy-infographic) --- usually in connection with a particular purpose. The detection of highly variable Latin characters and words previously shown by the TextFCN gives an idea of the generalization and therefore abstraction capacity showed off by deep neural networks to recognize things "unseen" before.
 
 ![Foo](/assets/writing/textFCN_scheme.jpg)
 
@@ -247,7 +247,7 @@ Regardless of evidences, the real understanding of why writing systems emerged c
 
 [Pepe Gimeno](http://www.pepegimeno.com/?language=en) is a prestigious graphic and typography designer whose work is so intimately tied to the reuse of natural and artificial waste, hazardously found, but carefully balanced in his compositions. In his work, there is the recurrent idea of creating script-like compositions of beautiful harmony. 
 
-By observing, it becomes evident that there must be some latent features shared between most, if not all, existing writing systems. Such common features might be connected with readability, by means of not only salient and distinguishable shapes, but also indicating clear paths to be able to read one symbol after the other.
+*By observing, it becomes evident that there must be some latent features shared between most, if not all, existing writing systems. Such common features might be connected with readability, by means of not only salient and distinguishable shapes, but also indicating clear paths to be able to read one symbol after the other.*
 
 {% capture fig_img %}
 ![Foo]({{ '/assets/writing/pepegimeno1.gif' | relative_url }}){: .width-sidebyside} ![Foo]({{ '/assets/writing/pepegimeno2.gif' | relative_url }}){: .width-sidebyside} 
@@ -259,4 +259,6 @@ By observing, it becomes evident that there must be some latent features shared 
 
 <!-- [Timeline](https://web.archive.org/web/20041011231449/http://www.ancientscripts.com/ws_timeline.html) -->
 
-I hope you enjoyed this particular story of the history of writing, an amazing and exciting legacy of the Ancient Worlds. Thanks for reading!
+I hope you enjoyed this particular story of the history of writing, an amazing and exciting legacy of the Ancient Worlds.
+
+Thanks for reading!
