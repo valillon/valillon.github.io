@@ -247,7 +247,7 @@ Regardless of evidences, the real understanding of why writing systems emerged c
 
 [Pepe Gimeno](http://www.pepegimeno.com/?language=en) is a prestigious graphic and typography designer whose work is so intimately tied to the reuse of natural and artificial waste, hazardously found, but carefully balanced in his compositions. In his work, there is the recurrent idea of creating script-like compositions of beautiful harmony. 
 
-*By observing, it becomes evident that there must be some latent features shared between most, if not all, existing writing systems. Such common features might be connected with readability, by means of not only salient and distinguishable shapes, but also indicating clear paths to be able to read one symbol after the other.*
+One important inference from all this is that it becomes evident that there must be some latent features shared between most, if not all, existing writing systems, which might be connected with readability by means of not only depicting salient and distinguishable shapes, but also indicating clear paths to be able to read one symbol after the other.
 
 {% capture fig_img %}
 ![Foo]({{ '/assets/writing/pepegimeno1.gif' | relative_url }}){: .width-sidebyside} ![Foo]({{ '/assets/writing/pepegimeno2.gif' | relative_url }}){: .width-sidebyside} 
