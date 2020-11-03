@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Hunting Facial Serendipities"
-excerpt: "The search for inspiring face shapes by softening deep learning face recognition."
+excerpt: "The search for imaginary faces by softening deep learning face recognition."
 date: 2020-10-30 09:10:11
 classes: wide
 tags: 
@@ -91,3 +91,5 @@ The following facial serendipities have been automatically discovered from ~25K 
 [![](/assets/serendipity/S_097-BB1-photo-1547990209-94f4a560ddba.jpg){: .height-small_fixed}](https://unsplash.com/photos/9eZNAlNvpUo)
 [![](/assets/serendipity/S_098-BB0-photo-1563123636-92d0f17712be.jpg){: .height-small_fixed}](https://unsplash.com/photos/oyVjpgdtnMs)
 [![](/assets/serendipity/S_099-BB0-photo-1484110854909-da2cbf57aa79.jpg){: .height-small_fixed}](https://unsplash.com/photos/eSOVOj43s6g)
+
+Thanks for reading!
