@@ -2,7 +2,7 @@
 layout: single
 title:  "Hunting Facial Serendipities"
 excerpt: "The search for imaginary faces by softening deep learning face recognition."
-date: 2020-10-30 09:10:11
+date: 2020-11-11 09:10:11
 classes: wide
 tags: 
     - serendipity
@@ -11,8 +11,10 @@ tags:
     - deep neural networks
 ---
 
-In progress...
+Usage rights of herein pictures have been carefully respected and, likewise, photographers' authorship has been credited by linking each image to its source. Click on the images to disclose it.
 {: .notice--info}
+
+[![](/assets/serendipity/header-mohnish-landge-Br2EZrMbgKU-unsplash.jpg){: .width-full}](https://unsplash.com/photos/Br2EZrMbgKU)
 
 Who has never played to discover shapes while looking at the clouds? That moment when *voilà*, you recognize a form emerging from the sky and shout "Look, up there! a face!". Serendipity describes that happy accident when something valuable happens by chance. 
 
@@ -26,7 +28,7 @@ Another source of illusory findings is aerial imaging, such as the famous [Face 
 
 
 
-For such perceptual phenomenon, our visual system has been trained over millennia under evolutionary pressure in order to recognize countless shapes. Particularly important are those which are vital for the sake of our survival, such as the silhouette of predators or colorful fruits. However, among all shapes, face recognition has an outstanding position for obvious reasons.
+For this perceptual phenomenon, our visual system has been trained over millennia under evolutionary pressure in order to recognize countless shapes. Particularly important are those which are vital for the sake of our survival, such as the silhouette of predators or colorful fruits. However, among all shapes, face recognition has an outstanding position for obvious reasons.
 
 A particular characteristic of this neural event is that once we have recognized a particular object, we can't stop recognizing it anytime we see it again. We can't unsee what we have seen. Moreover, recognition is evoked instantly in a click-time, such as the well-know [cow](https://www.visionandlearning.org/whatisvision08.html) or the [dalmatian](https://youtu.be/Ptr0guWpLU4) illusions.
 
@@ -39,13 +41,11 @@ A particular characteristic of this neural event is that once we have recognized
 
 An hallucination effect was recently showcased by [DeepDream](https://ai.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html), a computer algorithm called gradient based optimization for Deep Neural Networks (DNNs), by which figures previously learned by the net amazingly pop-up from the structures in the image.
 
-DNNs —biologically inspired, but not a faithful mimic of the human brain nature— have the capacity of learning highly complex and abstract patterns. They result in a powerful tool for detecting objects —also faces— in a great variety of poses not necessarily seen during the training stage. This is call *generalization*.
+DNNs —biologically inspired, but not a faithful mimic of the human brain nature— have the capacity of learning highly complex and abstract patterns. They result in a powerful tool for detecting objects, also faces, in a great variety of poses not necessarily seen during the training stage. This is call *generalization*.
 
 A remarkable neural model is *Single Shot Scale-Invariant Face Detector* ([S3FD](https://github.com/sfzhang15/SFD)). It shows a superb generalization performance at finding faces with different sizes and view angles, even partially occluded. Particularly, in this experiment S3FD has been employed not to find real faces, but patterns which resemble faces at first glance and in their ambiguity witness a great captivating and emotional power.
 
-The following facial serendipities have been automatically discovered from ~25K pictures of the [Little Unsplash Dataset](https://github.com/unsplash/datasets). For such a search, the scores estimated by S3FD —which stand for the probability of being a face— were considered exclusively between 0.5 and 1.0. Curiously, while many false positives were encountered, in the end it turned out that the higher or lower score was not particularly relevant to determine the real visual impact the serendipity possesses.
-
-
+The following facial serendipities have been automatically discovered from ~25K pictures of the [Little Unsplash Dataset](https://github.com/unsplash/datasets). For such a search, the scores estimated by S3FD —which stand for the probability of being a face— were considered exclusively between 0.5 and 1.0. Curiously, while many false positives were encountered, in the end it turned out that the higher or lower score was not particularly relevant to determine the real visual impact the serendipity possesses. Furthermore, it worths noting that some faces are more perceptible after being cropped, from its source image, in a separated frame. Others also required being rotated to stand up or being displayed at proper viewing size.
 
 [![](/assets/serendipity/S_052-BB0-photo-1564298933651-4dd9a8b814b6.jpg){: .height-small_fixed}](https://unsplash.com/photos/W4HN8SjPO0M)
 [![](/assets/serendipity/S_053-BB0-photo-1449870877465-2492f06ed718.jpg){: .height-small_fixed}](https://unsplash.com/photos/hcbSImc8cdY)
@@ -86,13 +86,14 @@ The following facial serendipities have been automatically discovered from ~25K 
 [![](/assets/serendipity/S_094-BB0-photo-1579092691900-29d2cc589743.jpg){: .height-small_fixed}](https://unsplash.com/photos/KmmVj3LY4lA)
 [![](/assets/serendipity/S_095-BB0-photo-1464808646948-8f732deb6e4b.jpg){: .height-small_fixed}](https://unsplash.com/photos/TRys9NU8GiQ)
 [![](/assets/serendipity/S_095-BB0-photo-1576158113840-43db9ff3ef09.jpg){: .height-small_fixed}](https://unsplash.com/photos/hSh_X3kJ4bI)
-[![](/assets/serendipity/S_096-BB0-photo-1548124537-ef884b9c53ad.jpg){: .height-small_fixed}](https://unsplash.com/photos/1jhNSrOxWJY)
 [![](/assets/serendipity/S_097-BB0-photo-1580304861638-789f869a09cc.jpg){: .height-small_fixed}](https://unsplash.com/photos/ZpFDZu3wKaU)
 [![](/assets/serendipity/S_097-BB1-photo-1547990209-94f4a560ddba.jpg){: .height-small_fixed}](https://unsplash.com/photos/9eZNAlNvpUo)
 [![](/assets/serendipity/S_098-BB0-photo-1563123636-92d0f17712be.jpg){: .height-small_fixed}](https://unsplash.com/photos/oyVjpgdtnMs)
 [![](/assets/serendipity/S_099-BB0-photo-1484110854909-da2cbf57aa79.jpg){: .height-small_fixed}](https://unsplash.com/photos/eSOVOj43s6g)
 
-Now, in order to bound some S3FD's limitations, let’s try a more specific experiment. S3FD was used to process four pairs of the above imaginary ghost faces, original clean shapes and hand-outlined drawings. It turned out that no face was detected in any of the clean versions, and only two were correctly detected in the outlined ones.
+Now, in order to bound some S3FD's limitations, let’s try a more specific experiment. S3FD was used here to process four pairs of the above imaginary ghost faces, the original clean shapes and hand-outlined drawings. It turned out that no face was detected in any of the clean versions, and only two were correctly detected in the outlined ones.
+
+Besides these figures are totally different from the training set, S3FD looks unable to internally complete highly abstract faces and therefore figure out things that they are simply not there. Such completion evocation is a very human peculiarity, as shown by the famous [Kanizsa illusion](https://en.wikipedia.org/wiki/Illusory_contours), formalized by [Gestaltism](https://en.wikipedia.org/wiki/Gestalt_psychology), and later measured by psychophysics. In other words, apparently, this kind of supervised deep learning architectures are not ready for imagination, yet. In a near future, unsupervised predictive models, such as [Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748), large-scale transformers like [Image-GPT](https://openai.com/blog/image-gpt/), or introspective attention and [memory networks](https://www.youtube.com/watch?v=Q57rzaHHO0k&list=RDCMUCP7jMXSY2xbc3KCAE0MHQ-A&index=10), will have much to say on this regard.
 
 ![](/assets/serendipity/restroom/IMG_1929.jpg){: .width-quarter}
 ![](/assets/serendipity/restroom/IMG_1930.jpg){: .width-quarter}
@@ -104,6 +105,52 @@ Now, in order to bound some S3FD's limitations, let’s try a more specific expe
 ![](/assets/serendipity/restroom/S_032-BB0-IMG_6347.jpg){: .width-quarter}
 ![](/assets/serendipity/restroom/S_044-BB0-IMG_6334.jpg){: .width-quarter}
 
-Besides these figures are totally different from the training set, S3FD looks unable to complete internally highly abstract faces and therefore figure out things that they are simply not there. Such completion evocation is a very human peculiarity, as shown by the famous [Kanizsa illusion](https://en.wikipedia.org/wiki/Illusory_contours), formalized by [Gestaltism](https://en.wikipedia.org/wiki/Gestalt_psychology), and later quantified by psychophysics. In other words, apparently, this kind of supervised deep learning architectures are not ready for imagination, yet. In a near future, unsupervised predictive models such as [Contrastive Predictive Coding](https://arxiv.org/abs/1807.03748), transformers like [Image-GPT](https://openai.com/blog/image-gpt/), or introspective attention and [memory networks](https://www.youtube.com/watch?v=Q57rzaHHO0k&list=RDCMUCP7jMXSY2xbc3KCAE0MHQ-A&index=10) will have much to say on this respect.
+By way of conclusion, the collection of pictures bellow comprises crops of clouds discovered by looking for a needle in a haystack in around 1.96 million pictures of the [Full Unsplash Dataset](https://github.com/unsplash/datasets). Each of the shapes is a golden nugget in a vast sea of pixels and shapes. They are evocative, intriguing, disturbing, and surely evoke disparate emotional memories to each of us. Among the faces, I glimpse glorious warriors, mythological figures, screaming daemons and dragons, contemplating animals or gloomy puppets. It unavoidably brings to my mind reminiscences of the Goyesque and grotesque [black paintings](https://en.wikipedia.org/wiki/Black_Paintings), enigmatic [Daliesque figures](https://www.salvador-dali.org/en/museums/dali-theatre-museum-in-figueres/the-collection/145/enigmatic-elements-in-a-landscape), dramatic [Picassian expressions](https://www.museoreinasofia.es/en/collection/artwork/guernica), or energetic and striking [Saurian archetypes](http://www.antoniosaura.org/en/his-work-painting-archetypes).
 
-Thanks for reading!
+[![](/assets/serendipity/clouds/S_050-BB0-02d1TnEUiig-photo-1582662539566-0366c74ffe3d.jpg){: .height-small_fixed}](https://unsplash.com/photos/02d1TnEUiig)
+[![](/assets/serendipity/clouds/S_050-BB0-AMNFn-dpd08-photo-1520756000591-3f2728e1d1be.jpg){: .height-small_fixed}](https://unsplash.com/photos/AMNFn-dpd08)
+[![](/assets/serendipity/clouds/S_050-BB0-AMNFn-dpd08-photo-1520756000591-3f2728e1d1be_2.jpg){: .height-small_fixed}](https://unsplash.com/photos/AMNFn-dpd08)
+[![](/assets/serendipity/clouds/S_051-BB0-Vn4ODpBW3R4-photo-1534835733198-cbfaf09b66e9.jpg){: .height-small_fixed}](https://unsplash.com/photos/Vn4ODpBW3R4)
+[![](/assets/serendipity/clouds/S_051-BB0-YxV_XQRYh18-photo-1499882982619-c79534d9db40.jpg){: .height-small_fixed}](https://unsplash.com/photos/YxV_XQRYh18)
+[![](/assets/serendipity/clouds/S_052-BB0-7f7SlDYdp7o-photo-1578228998554-28ea916b7836.jpg){: .height-small_fixed}](https://unsplash.com/photos/7f7SlDYdp7o)
+[![](/assets/serendipity/clouds/S_052-BB0-GO81gCmh5N0-photo-1564217607641-6b91de44b473.jpg){: .height-small_fixed}](https://unsplash.com/photos/GO81gCmh5N0)
+[![](/assets/serendipity/clouds/S_054-BB0-AXavzqjPrSU-photo-1559162430-1d5dfa458882.jpg){: .height-small_fixed}](https://unsplash.com/photos/AXavzqjPrSU)
+[![](/assets/serendipity/clouds/S_054-BB0-MA0uuw0L3Pk-photo-1593185246746-389dbf221bd4.jpg){: .height-small_fixed}](https://unsplash.com/photos/MA0uuw0L3Pk)
+[![](/assets/serendipity/clouds/S_054-BB1-F-552njYVno-photo-1583074345723-15313f31ebf2.jpg){: .height-small_fixed}](https://unsplash.com/photos/F-552njYVno)
+[![](/assets/serendipity/clouds/S_055-BB0-Bucoxf2pVb4-photo-1593622591971-7859742dbfea.jpg){: .height-small_fixed}](https://unsplash.com/photos/Bucoxf2pVb4)
+[![](/assets/serendipity/clouds/S_055-BB0-JcEU0t7u3pU-photo-1589209825191-e01856facd5e.jpg){: .height-small_fixed}](https://unsplash.com/photos/JcEU0t7u3pU)
+[![](/assets/serendipity/clouds/S_055-BB0-ZoL2Cu9p0yU-photo-1591609758618-592a8c186204.jpg){: .height-small_fixed}](https://unsplash.com/photos/ZoL2Cu9p0yU)
+[![](/assets/serendipity/clouds/S_055-BB0-bOE8FQt0qnM-photo-1506097581468-c02efe6da108.jpg){: .height-small_fixed}](https://unsplash.com/photos/bOE8FQt0qnM)
+[![](/assets/serendipity/clouds/S_055-BB0-t92CxZ9GR8I-photo-1536061125439-5ef97c6f95aa.jpg){: .height-small_fixed}](https://unsplash.com/photos/t92CxZ9GR8I)
+[![](/assets/serendipity/clouds/S_056-BB0-F6IQP7JyraM-photo-1575270025786-85829fc2bd44.jpg){: .height-small_fixed}](https://unsplash.com/photos/F6IQP7JyraM)
+[![](/assets/serendipity/clouds/S_057-BB0-Br2EZrMbgKU-photo-1570356812210-f5d17bb280be.jpg){: .height-small_fixed}](https://unsplash.com/photos/Br2EZrMbgKU)
+[![](/assets/serendipity/clouds/S_058-BB0--35k5ewcFhA-photo-1566331597350-8c73c0da59a7.jpg){: .height-small_fixed}](https://unsplash.com/photos/-35k5ewcFhA)
+[![](/assets/serendipity/clouds/S_058-BB0-NgE5Ib8lQu0-photo-1533209714601-90982fc7030b.jpg){: .height-small_fixed}](https://unsplash.com/photos/NgE5Ib8lQu0)
+[![](/assets/serendipity/clouds/S_058-BB0-XEXg5U0pxak-photo-1536409040381-f3caf7e80c49.jpg){: .height-small_fixed}](https://unsplash.com/photos/XEXg5U0pxak)
+[![](/assets/serendipity/clouds/S_059-BB0-g7rH5NSZs6o-photo-1542358110-4c37b1261e84.jpg){: .height-small_fixed}](https://unsplash.com/photos/g7rH5NSZs6o)
+[![](/assets/serendipity/clouds/S_059-BB0-uvXbuPyB5ck-photo-1523179989595-116ef2a82d6c.jpg){: .height-small_fixed}](https://unsplash.com/photos/uvXbuPyB5ck)
+[![](/assets/serendipity/clouds/S_062-BB0-CdY8SK3KkmM-photo-1474446515024-c781c2ef8f42.jpg){: .height-small_fixed}](https://unsplash.com/photos/CdY8SK3KkmM)
+[![](/assets/serendipity/clouds/S_063-BB0-R6hKo_oUcQc-photo-1560037217-a597f7b53b88.jpg){: .height-small_fixed}](https://unsplash.com/photos/R6hKo_oUcQc)
+[![](/assets/serendipity/clouds/S_063-BB0-YKcOrK_hi3I-photo-1572320149274-496c4a13b50d.jpg){: .height-small_fixed}](https://unsplash.com/photos/YKcOrK_hi3I)
+[![](/assets/serendipity/clouds/S_067-BB0-9hn6yM5t8Kk-photo-1573585670034-6ff812249daf.jpg){: .height-small_fixed}](https://unsplash.com/photos/9hn6yM5t8Kk)
+[![](/assets/serendipity/clouds/S_068-BB0-_YlnrEcD1X0-photo-1565263306522-6dca4cde4de5.jpg){: .height-small_fixed}](https://unsplash.com/photos/_YlnrEcD1X0)
+[![](/assets/serendipity/clouds/S_069-BB0-j2ruQyF1f88-photo-1539716675891-728e43dca718.jpg){: .height-small_fixed}](https://unsplash.com/photos/j2ruQyF1f88)
+[![](/assets/serendipity/clouds/S_075-BB0-ZAI5zaldZvU-photo-1557741560-856c59e753d4.jpg){: .height-small_fixed}](https://unsplash.com/photos/ZAI5zaldZvU)
+[![](/assets/serendipity/clouds/S_077-BB0-ICw4txKAkoQ-photo-1583835423529-a1a355e15dc3.jpg){: .height-small_fixed}](https://unsplash.com/photos/ICw4txKAkoQ)
+[![](/assets/serendipity/clouds/S_079-BB0-N-BJOqlHPic-photo-1532187587322-72a6f8958ba7.jpg){: .height-small_fixed}](https://unsplash.com/photos/N-BJOqlHPic)
+[![](/assets/serendipity/clouds/S_081-BB0-TS5ps7se-CM-photo-1592762723096-ab8e59e76f06.jpg){: .height-small_fixed}](https://unsplash.com/photos/TS5ps7se-CM)
+[![](/assets/serendipity/clouds/S_084-BB0-ogFsB52__8g-photo-1564540268834-eb593d714cb2.jpg){: .height-small_fixed}](https://unsplash.com/photos/ogFsB52__8g)
+[![](/assets/serendipity/clouds/S_085-BB1-3ZiN_mEaUPs-photo-1506639841351-d943af46f6fe.jpg){: .height-small_fixed}](https://unsplash.com/photos/3ZiN_mEaUPs)
+[![](/assets/serendipity/clouds/S_086-BB0-H9eQqjnwbLE-photo-1532368128977-bd003a7e6ddc.jpg){: .height-small_fixed}](https://unsplash.com/photos/H9eQqjnwbLE)
+[![](/assets/serendipity/clouds/S_088-BB0-HDrk_W6APxE-photo-1566253123159-bf1c647bdd23.jpg){: .height-small_fixed}](https://unsplash.com/photos/HDrk_W6APxE)
+[![](/assets/serendipity/clouds/S_088-BB0-KQu2err3204-photo-1569128743384-b1b5084dbc34.jpg){: .height-small_fixed}](https://unsplash.com/photos/KQu2err3204)
+[![](/assets/serendipity/clouds/S_089-BB0-jjZVf4hIL9U-photo-1588014271302-7a4e6a37642b.jpg){: .height-small_fixed}](https://unsplash.com/photos/jjZVf4hIL9U)
+[![](/assets/serendipity/clouds/S_091-BB0-WfCmNom4M4Q-photo-1544766230-594734c916df.jpg){: .height-small_fixed}](https://unsplash.com/photos/WfCmNom4M4Q)
+[![](/assets/serendipity/clouds/S_092-BB0-VIWPdRRE-mc-photo-1538172739434-bb1eac39bdb6.jpg){: .height-small_fixed}](https://unsplash.com/photos/VIWPdRRE-mc)
+[![](/assets/serendipity/clouds/S_092-BB0-cVy4aZ50gXU-photo-1594905666013-8f11171b8d6d.jpg){: .height-small_fixed}](https://unsplash.com/photos/cVy4aZ50gXU)
+[![](/assets/serendipity/clouds/S_092-BB0-m4SamoTeuuQ-photo-1478906483065-5077198f8a05.jpg){: .height-small_fixed}](https://unsplash.com/photos/m4SamoTeuuQ)
+[![](/assets/serendipity/clouds/S_092-BB0-qMPJ0DYEvxw-photo-1572175447685-931578887e48.jpg){: .height-small_fixed}](https://unsplash.com/photos/qMPJ0DYEvxw)
+[![](/assets/serendipity/clouds/S_095-BB0-OhRPx2tEnt8-photo-1589114478660-964b5917db66.jpg){: .height-small_fixed}](https://unsplash.com/photos/OhRPx2tEnt8)
+[![](/assets/serendipity/clouds/S_096-BB0-1jhNSrOxWJY-photo-1548124537-ef884b9c53ad.jpg){: .height-small_fixed}](https://unsplash.com/photos/1jhNSrOxWJY)
+
+Thanks for reading and watching!
