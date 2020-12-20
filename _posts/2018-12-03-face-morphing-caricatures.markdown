@@ -6,6 +6,7 @@ date: 2018-12-03 12:00:00
 classes: wide
 header:
   image: /assets/caricatures/header_hillary_clinton_delaunay.jpg
+  teaser: /assets/caricatures/header_hillary_clinton_delaunay.jpg
 tags: 
     - machine learning
     - programming

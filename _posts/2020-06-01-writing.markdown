@@ -6,6 +6,7 @@ date: 2020-06-01 09:01:02
 classes: wide
 header:
   image: /assets/writing/handWristPain-939030682-770x553-745x490.jpg
+  teaser: /assets/writing/handWristPain-939030682-770x553-745x490.jpg
 tags: 
     - writing systems
     - script

@@ -6,6 +6,7 @@ date: 2019-02-28 09:01:02
 classes: wide
 header:
   image: /assets/deeplook/header_velazquez_06.jpg
+  teaser: "/assets/deeplook/header_velazquez_06.jpg"
 tags: 
     - deep learning
     - neural networks

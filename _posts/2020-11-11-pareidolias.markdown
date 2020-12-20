@@ -6,7 +6,8 @@ date: 2020-11-11 09:10:11
 classes: wide
 header:
   image: /assets/pareidolias/header-mohnish-landge-Br2EZrMbgKU-unsplash.jpg
-  caption: "[Mohnish Landge](https://unsplash.com/photos/Br2EZrMbgKU)"  
+  caption: "[Mohnish Landge](https://unsplash.com/photos/Br2EZrMbgKU)"
+  teaser: /assets/pareidolias/header-mohnish-landge-Br2EZrMbgKU-unsplash.jpg
 tags: 
     - facial pareidolia
     - face detection
