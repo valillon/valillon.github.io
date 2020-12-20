@@ -4,6 +4,8 @@ title:  "Creating Funny Caricatures With Automatic Face Morphing"
 excerpt: "Some examples of facial expression transference between two faces with Dlib and OpenCV to automatically create facial caricatures."
 date: 2018-12-03 12:00:00
 classes: wide
+header:
+  image: /assets/caricatures/header_hillary_clinton_delaunay.jpg
 tags: 
     - machine learning
     - programming

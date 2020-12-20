@@ -4,6 +4,9 @@ title:  "Hunting Facial Pareidolias With Deep Learning"
 excerpt: "The search for imaginary faces by softening deep learning face recognition."
 date: 2020-11-11 09:10:11
 classes: wide
+header:
+  image: /assets/pareidolias/header-mohnish-landge-Br2EZrMbgKU-unsplash.jpg
+  caption: "[Mohnish Landge](https://unsplash.com/photos/Br2EZrMbgKU)"  
 tags: 
     - facial pareidolia
     - face detection
@@ -15,7 +18,7 @@ tags:
 Usage rights of herein pictures have been carefully respected and, likewise, photographers' authorship has been credited by linking each image to its source. Click on the images to disclose it.
 {: .notice--info}
 
-[![](/assets/pareidolias/header-mohnish-landge-Br2EZrMbgKU-unsplash.jpg){: .width-full}](https://unsplash.com/photos/Br2EZrMbgKU)
+<!-- [![](/assets/pareidolias/header-mohnish-landge-Br2EZrMbgKU-unsplash.jpg){: .width-full}](https://unsplash.com/photos/Br2EZrMbgKU) -->
 
 Who has never played to discover known shapes while looking at the clouds? That moment when *voilà*, you recognize a form emerging from the sky and shout "Look, up there! a face!". [Pareidolia](https://en.wikipedia.org/wiki/Pareidolia) describes that happy accident when we marvelously interpret a visual, also auditory, pattern as a meaningful object.
 

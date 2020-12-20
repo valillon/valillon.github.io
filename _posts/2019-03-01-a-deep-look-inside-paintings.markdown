@@ -4,6 +4,8 @@ title:  "A Deep Look Inside Paintings"
 excerpt: "About deep learning enabling to reconstruct depth of paintings"
 date: 2019-02-28 09:01:02
 classes: wide
+header:
+  image: /assets/deeplook/header_velazquez_06.jpg
 tags: 
     - deep learning
     - neural networks
