@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes@4.21.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -88,7 +88,7 @@ og_image                 : # Open Graph/Twitter default site image
 social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  links                  : # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -102,25 +102,41 @@ author:
   name             : "Rafael Redondo"
   avatar           : "/assets/Avatar_encajado.jpg"
   bio              : "Computer Art Programmer"
-  location         : "Barcelona, ES"
+  location         : #"Barcelona, ES"
   email            : # "some@email.com"
+  links:
+    - label: "valillon.art"
+      icon: "far fa-circle"
+      url: "http://valillon.art"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/valillon"
+    - label: "SoundCloud"
+      icon: fab fa-fw fa-soundcloud"
+      url: "https://soundcloud.com/valillon"    
+    - label: "LinkedIn"
+      icon: fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rafaelredondotejedor"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-link"
+      url: "http://scholar.google.es/citations?user=QKaQVQkAAAAJ&hl=es&oi=ao"
   uri              :
-  home             : http://valillon.art # "absolute or relative url to link to author home"
+  home             : #http://valillon.art # "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "valillon"
+  github           : #"valillon"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "rafaelredondotejedor" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : #"rafaelredondotejedor" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
-  soundcloud       : "valillon"
+  soundcloud       : #"valillon"
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
@@ -130,6 +146,23 @@ author:
   xing             :
   youtube          :
 
+
+# Site Footer
+footer:
+  links:
+    - label: "valillon.art"
+      icon: "far fa-circle"
+      url: "http://valillon.art"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/valillon"
+    - label: "SoundCloud"
+      icon: fab fa-fw fa-soundcloud"
+      url: "https://soundcloud.com/valillon"    
+    - label: "LinkedIn"
+      icon: fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/rafaelredondotejedor"
+    
 
 # Reading Files
 include:
@@ -211,12 +244,12 @@ plugins:
   - jekyll-include-cache
 
 # mimic GitHub Pages with --safe
-# whitelist:
-#   - jekyll-paginate
-#   - jekyll-sitemap
-#   - jekyll-gist
-#   - jekyll-feed
-#   - jemoji
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
 
 # Archives
 #  Type
