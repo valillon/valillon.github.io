@@ -18,6 +18,7 @@ I'm a computer vision engineer by training, interested on areas like human visio
 Happy reading! and if you enjoy it, you could just buy me a coffee!  
 {: style="font-size:15px;" align="justify"}
 
-[!["Buy Me A Coffee"](https://github.com/valillon/valillon.github.io/tree/master/assets/bmc/bmc-button.png)](https://www.buymeacoffee.com/valillon)
-
+[!["Buy Me A Coffee"](https://github.com/valillon/valillon.github.io/raw/master/assets/bmc/bmc-button.png)](https://www.buymeacoffee.com/valillon)
+{: style="width: 22%"}
 <!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="valillon" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script> -->
+
