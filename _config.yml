@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "valillon.github.io"
 title_separator          : "-"
-name                     : "Rafael Redondo Tejedor"
+# name                     : "Rafael Redondo Tejedor"
 description              : "Computer Art Programmer"
 url                      : "https://valillon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -121,7 +121,7 @@ author:
       icon: "fas fa-fw fa-link"
       url: "http://scholar.google.es/citations?user=QKaQVQkAAAAJ&hl=es&oi=ao"
   uri              :
-  home             : #http://valillon.art # "absolute or relative url to link to author home"
+  home             : https://valillon.github.io # "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
@@ -281,10 +281,10 @@ jekyll-archives:
 
 # HTML Compression
 # - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
+# compress_html:
+#   clippings: all
+#   ignore:
+#     envs: development
 
 
 # Defaults
