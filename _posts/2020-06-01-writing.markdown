@@ -48,7 +48,7 @@ In particular, Fully Convolutional Networks (FCN) perform image analysis with mi
 
 Throughout this article, I used this [TextFCN](https://github.com/gombru/TextFCN) trained **exclusively with Latin characters** from the [COCO-Text](https://bgshih.github.io/cocotext) dataset with hundreds of thousands of text instances and multiple fonts. It is important to understand that every alphabet by itself may give rise also to multiple [typography anatomies](https://www.toptal.com/designers/typography/typography-anatomy-infographic) --- usually in connection with a particular purpose. The detection of highly variable Latin characters and words previously shown by the TextFCN gives an idea of the generalization and therefore abstraction capacity showed off by deep neural networks to recognize things "unseen" before.
 
-![Foo](/assets/writing/textFCN_scheme.jpg)
+![Foo](/assets/writing/textFCN_scheme.png)
 
 # Classical antiquity: the Roman and Hellenic forefathers 
 
