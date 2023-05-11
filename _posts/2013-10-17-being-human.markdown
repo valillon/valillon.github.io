@@ -26,13 +26,13 @@ Enfrentarse a esto, a la vida, a veces nos cuesta, y preferimos poner un velo y 
 Almost literal translation.
 {: .notice}
 
-I was thinking, like if you were eating popcorns, that this thing we call life is about two issues: *pleasure* and *transcendence*. But watch out, they are not understood as the eternal battle between epicureans and stoics, but two even more abstract categories. Let me explain, with examples.
+I was thinking, as if you were eating popcorn, that this thing we call life is about two issues: *pleasure* and *transcendence*. But watch out, they are not understood as the eternal battle between epicureans and stoics, but two even more abstract categories. Let me explain, with examples.
 
-I understand pleasure as sexual satisfaction, I mean sensual satisfaction of savoring a chocolate ice-cream with cookies and sprinkled almonds, in the middle of a paradisaic beach, bla bla bla,... but also the satisfying pleasure of making a well-done job, helping people by your side, etc. All these things are temporal emotional rewards which last a moment or few days at most.
+I understand pleasure as sexual, I mean, sensual satisfaction of savoring a chocolate ice-cream with cookies and sprinkled almonds, in the middle of a paradisaic beach, blah blah blah,... but also the satisfying pleasure of a well-done job, helping people by your side, etc. All these things are temporal emotional rewards which last a moment or a few days at most.
 
-On the other hand, it is the transcendence, which also drive our steps, and frequently manipulates behind our backs, as the pleasures. Here I find all those acts we do for surviving to our own death, such as leaving a material legacy, an artistic legacy, a way of thinking,... which is usually translated into our offspring, our genetic legacy to hold over time what we were. Thus, our emotions about our wanted type of job, our partner, friends beside us, our spare time or even our fashion style have much to do with our unending quest to achieve the best legacy we can beyond our own death.
+On the other hand, it is the transcendence, which also drive our steps, and frequently manipulates us behind our backs ---as the pleasures do too. Here I find all those acts we do to survive beyond our own death, such as leaving a material legacy, an artistic legacy, a way of thinking,... which is usually translated into our offspring, our genetic legacy to hold over time what we were. Thus, our emotions about our wanted type of job, our partner, friends beside us, our spare time or even our fashion style have much to do with our unending quest to achieve the best legacy.
 
-Facing it all, the life, is hard sometimes, and we prefer to set a veil and place it therein where it is barely seen, like an old furniture, and buy new ones which are much cooler. However, in this old furniture is where the wisdom resides and our duty as persons is to uncover, polish and use it everyday, at every moment. Learning to make the pleasures and the transcendences aware in the finitude of our lifes, in essence, being human.
+Facing it all, life, is hard sometimes, and we prefer to set a veil and place it therein where it is barely seen, like an old piece of furniture, and buy new ones which are much cooler. However, in this old furniture is where the wisdom resides and our duty as persons is to uncover, polish and use it every day, at every moment. Learning to be aware of the pleasures and transcendences in the finitude of our lifes, in essence, being human.
 
 *RRT* • 17.10.2013
 {: .text-right}
