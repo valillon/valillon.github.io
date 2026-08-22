@@ -10,8 +10,8 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+theme                    : "minimal-mistakes-jekyll"
+# remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "valillon.github.io"
 title_separator          : "-"
 # name                     : "Rafael Redondo Tejedor"
-description              : "Computer Art Programmer"
+description              : "AI Research & Multimedia Innovation<br>@[Eurecat](https://www.eurecat.org/)<br><br>Research interests: AI, Computer Vision, Deep Learning, Generative Models, Multimodal Audio-Visual Learning, Interactive Systems."
 url                      : "https://valillon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "valillon/valillon.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -102,26 +102,26 @@ analytics:
 # Site Author
 author:
   name             : "Rafael Redondo"
-  avatar           : "/assets/Avatar_encajado.jpg"
-  bio              : "Computer Art Programmer"
-  location         : #"Barcelona, ES"
+  avatar           : "/assets/RRT2.jpg"
+  bio              : "AI Research & Multimedia Innovation<br>@[Eurecat](https://www.eurecat.org/)<br><br>Research interests: AI, Computer Vision, Deep Learning, Generative Models, Multimodal Audio-Visual Learning, Interactive Systems."
+  location         : "Barcelona, ES"
   email            : # "some@email.com"
   links:
-    - label: "valillon.art"
-      icon: "far fa-circle"
-      url: "http://valillon.art"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/valillon"
-    - label: "SoundCloud"
-      icon: fab fa-fw fa-soundcloud"
-      url: "https://soundcloud.com/valillon"    
     - label: "LinkedIn"
       icon: fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rafaelredondotejedor"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
       url: "http://scholar.google.es/citations?user=QKaQVQkAAAAJ&hl=es&oi=ao"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/valillon"
+    - label: "valillon.art"
+      icon: "far fa-circle"
+      url: "http://valillon.art"
+    # - label: "SoundCloud"
+    #   icon: fab fa-fw fa-soundcloud"
+    #   url: "https://soundcloud.com/valillon"    
   uri              :
   home             : https://valillon.github.io # "absolute or relative url to link to author home"
   bitbucket        :
@@ -158,9 +158,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/valillon"
-    - label: "SoundCloud"
-      icon: fab fa-fw fa-soundcloud"
-      url: "https://soundcloud.com/valillon"    
+    # - label: "SoundCloud"
+    #   icon: fab fa-fw fa-soundcloud"
+    #   url: "https://soundcloud.com/valillon"    
     - label: "LinkedIn"
       icon: fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rafaelredondotejedor"
@@ -231,8 +231,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -296,7 +296,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: archive
+      layout: single
       author_profile: true
       read_time: true
       comments: false

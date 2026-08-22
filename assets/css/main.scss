@@ -1,18 +1,150 @@
 ---
 ---
-
+// SCSS variables (define before usage)
 // $background-color : #FAEBEFFF;
 // $body-color :#FAEBEFFF;
-// $text-color : #333D79FF;
 $background-color : rgb(236,246,246);
 $body-color : rgb(236,246,246);
 $text-color : rgb(5,50,172);
 // $link-color : #FCAF58;
 $link-color : #124FF8;
 $masthead-link-color : rgb(5,50,172);
+@import "minimal-mistakes";
 
+// Enlarge the author-profile portrait when it is displayed in the sidebar.
+// Keep the theme's compact avatar on smaller screens where the profile is horizontal.
+@media (min-width: 64em) {
+  .author__avatar img {
+    max-width: 160px;
+  }
+}
 
-@import "{{ site.theme }}";
+// Publications: media at left and paper details at right, inspired by the
+// compact academic-paper rows on rogermm14.github.io.
+.publications-list {
+  margin-top: 2rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(120px, 155px) minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: center;
+  margin-bottom: 0;
+  margin-top: 16px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.publication-card__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.publication-card__media a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.publication-card__media img,
+.publication-card__media video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+
+.publication-card__media-hover {
+  opacity: 0;
+  transition: opacity 220ms ease-in-out;
+}
+
+.publication-card__media:hover .publication-card__media-hover,
+.publication-card__media:focus-within .publication-card__media-hover {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-card__media-hover {
+    display: none;
+    transition: none;
+  }
+}
+
+.publication-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.publication-card__content > * {
+  margin-block: 0 !important;
+  padding-block: 0;
+}
+
+.publication-card__title {
+  color: $masthead-link-color;
+  font-size: 16px;
+  font-weight: 700;
+
+}
+
+.publication-card__authors {
+  color: $text-color;
+  font-weight: 400;  
+}
+
+.publication-card__venue {
+  color: rgba(5, 50, 172, 0.72);
+  font-weight: 500;
+}
+
+.publication-card__description {
+  color: rgba(5, 50, 172, 0.82);
+  text-align: justify;
+  margin-top: 4px !important;
+  font-size: 13px;
+}
+
+.publication-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.45rem;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.publication-card__links span {
+  color: rgba(5, 50, 172, 0.35);
+}
+.publication-card__awards {
+  color: rgb(218, 130, 23);
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .publication-card {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .publication-card__media {
+    width: min(100%, 260px);
+    aspect-ratio: 4 / 3;
+  }
+}
 
 a:hover {
   color: #0ACAFF;
@@ -69,4 +201,52 @@ code.highlighter-rouge {
 .height-medium_fix {
   height: 480px;
   margin-bottom: 10px;
+}
+
+/* Minimal overrides for masthead navigation visual consistency
+   - Use theme masthead color for nav links
+   - Bold selected link
+   - Animated underline on hover that matches text color
+   High specificity to override theme defaults without changing theme files. */
+#site-nav .visible-links .masthead__menu-item > a,
+#site-nav .visible-links .masthead__menu-item > a:link,
+#site-nav .visible-links .masthead__menu-item > a:visited {
+  color: $masthead-link-color !important;
+  text-decoration: none !important;
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* animated underline using pseudo element, matches text color */
+#site-nav .visible-links .masthead__menu-item > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 200ms ease;
+}
+
+#site-nav .visible-links .masthead__menu-item > a:hover::after,
+#site-nav .visible-links .masthead__menu-item > a:focus::after {
+  transform: scaleX(1);
+}
+
+/* selected/active link bold */
+#site-nav .visible-links .masthead__menu-item > a[aria-current="page"],
+#site-nav .visible-links .masthead__menu-item > a.active,
+#site-nav .visible-links .masthead__menu-item.active > a {
+  font-weight: 700 !important;
+}
+
+/* Ensure any small indicator inserted by JS uses the same color when possible */
+.masthead [style*="background"],
+.masthead [style*="background-color"] {
+  background-color: $masthead-link-color !important;
 }

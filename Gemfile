@@ -14,7 +14,8 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 # gem "jekyll", "~> 3.7.3"
 # gem "jekyll"
 
-# gem "minimal-mistakes-jekyll"
+gem "minimal-mistakes-jekyll"
+gem "webrick"
 
 # # This is the default theme for new Jekyll sites.
 # gem 'minima', '~> 2.0'

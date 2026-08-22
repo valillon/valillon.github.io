@@ -1,0 +1,18 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  try {
+    var path = location.pathname || '/';
+    if (!path.endsWith('/')) path = path + '/';
+    document.querySelectorAll('#site-nav a').forEach(function (a) {
+      var href = a.getAttribute('href') || '/';
+      var norm = href;
+      if (!norm.endsWith('/')) norm = norm + '/';
+      if (norm === path) {
+        a.setAttribute('aria-current', 'page');
+        a.classList.add('active');
+        if (a.parentElement) a.parentElement.classList.add('active');
+      }
+    });
+  } catch (e) { console.error(e); }
+});
+</script>

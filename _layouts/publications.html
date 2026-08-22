@@ -1,0 +1,70 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+<div class="publications-list">
+  {% for publication in site.data.publications %}
+    <article class="publication-card">
+      <div class="publication-card__media">
+          <img
+            class="publication-card__media-base"
+            src="{{ publication.image | relative_url }}"
+            alt="{{ publication.image_alt | default: publication.title }}"
+            loading="lazy"
+          >
+          {% if publication.hover_image %}
+            <img
+              class="publication-card__media-hover"
+              src="{{ publication.hover_image | relative_url }}"
+              alt=""
+              loading="lazy"
+              aria-hidden="true"
+            >
+          {% endif %}
+          {% if publication.hover_video %}
+            <video
+              class="publication-card__media-hover"
+              muted
+              autoplay
+              loop
+              playsinline
+              preload="auto"
+              aria-hidden="true"
+            >
+              <source src="{{ publication.hover_video | relative_url }}" type="video/mp4">
+            </video>
+          {% endif %}
+      </div>
+
+      <div class="publication-card__content">
+        <div class="publication-card__title">{{ publication.title }}</div>
+
+        <div class="publication-card__authors">
+          {% for author in publication.authors %}
+            {% if author.highlight %}<strong>{{ author.name }}</strong>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+          {% endfor %}
+        </div>
+
+        <div class="publication-card__venue"><em>{{ publication.venue }}</em>, {{ publication.year }}</div>
+
+        {% if publication.links %}
+          <nav class="publication-card__links" aria-label="Links for {{ publication.title }}">
+            {% for link in publication.links %}
+              <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+            {% endfor %}
+          </nav>
+        {% endif %}
+
+        <div class="publication-card__description">{{ publication.description }}</div>
+        {% if publication.awards %}
+          <div class="publication-card__awards">{{ publication.awards }}</div>
+        {% endif %}
+      </div>
+    </article>
+    <br>
+  {% endfor %}
+</div>
+
+{% include nav-activator.html %}

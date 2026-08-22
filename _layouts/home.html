@@ -1,0 +1,10 @@
+---
+layout: archive
+---
+{%- assign locale = page.locale | default: layout.locale | default: site.locale %}
+
+{{ content }}
+
+<!-- Intentionally omit recent posts block to keep homepage content only -->
+
+{% include nav-activator.html %}
