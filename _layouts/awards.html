@@ -6,17 +6,23 @@ layout: single
 
 <div class="award-list">
   {% for award in site.data.awards %}
-    <article class="award-card">
-      <p class="award-card__year">{{ award.year }} · {{ award.recognition }}</p>
+    <article class="award-card{% if forloop.first %} award-card--featured{% endif %}">
+      <div class="award-card__seal" aria-hidden="true">
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="award-card__meta">
+        <span class="award-card__year">{{ award.year }}</span>
+        <span class="award-card__recognition">{{ award.recognition }}</span>
+      </div>
       <h2>
         {% if award.url %}<a href="{{ award.url }}">{{ award.title }}</a>{% else %}{{ award.title }}{% endif %}
       </h2>
 
       {% if award.featured_work %}
-        <p><em>{{ award.featured_work }}</em>{% if award.contributors %}, {{ award.contributors }}{% endif %}</p>
+        <p class="award-card__work"><em>{{ award.featured_work }}</em>{% if award.contributors %}<br> {{ award.contributors }}{% endif %}</p>
       {% endif %}
 
-      {% if award.description %}<p>{{ award.description }}</p>{% endif %}
+      {% if award.description %}<p class="award-card__description">{{ award.description }}</p>{% endif %}
 
       {% if award.links %}
         <nav class="award-card__links" aria-label="Links for {{ award.title }}">

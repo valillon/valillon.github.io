@@ -560,24 +560,6 @@
     - label: "doi"
       url: "https://doi.org/10.1117/12.608399"
 
-- title: "Multifocus Fusion with Multisize Windows"
-  authors:
-    - name: "Rafael Redondo"
-      highlight: true
-    - name: "Filip Šroubek"
-    - name: "Sylvain Fischer"
-    - name: "Gabriel Cristóbal"
-  venue: "SPIE Applications of Digital Image Processing XXVIII"
-  year: 2005
-  image: "/assets/publications/fusion_multisize.jpg"
-  hover_image: "/assets/publications/fusion_multisize_hover.jpg"
-  description: "A multifocus fusion technique that adapts the analysis-window size to local image content when selecting the sharpest source regions. It indirectly produces depth estimation and extends the effective depth of field."
-  links:
-    - label: "paper"
-      url: "http://library.utia.cas.cz/prace/20050252.pdf"
-    - label: "doi"
-      url: "https://doi.org/10.1117/12.619263"
-
 - title: "Sparse Gabor Wavelets by Local Operations"
   authors:
     - name: "Sylvain Fischer"
@@ -593,6 +575,23 @@
   links:
     - label: "doi"
       url: "https://doi.org/10.1117/12.608403"
+
+- title: "Multifocus Fusion with Multisize Windows"
+  authors:
+    - name: "Rafael Redondo"
+      highlight: true
+    - name: "Filip Šroubek"
+    - name: "Sylvain Fischer"
+    - name: "Gabriel Cristóbal"
+  venue: "SPIE Applications of Digital Image Processing XXVIII"
+  year: 2005
+  image: "/assets/publications/fusion_multisize.jpg"
+  description: "A multifocus fusion technique that adapts the analysis-window size to local image content when selecting the sharpest source regions. It indirectly produces depth estimation and extends the effective depth of field."
+  links:
+    - label: "paper"
+      url: "http://library.utia.cas.cz/prace/20050252.pdf"
+    - label: "doi"
+      url: "https://doi.org/10.1117/12.619263"
 
 - title: "Modeling of Simple Cells Through a Sparse Overcomplete Gabor Wavelet Representation Based on Local Inhibition and Facilitation"
   authors:
