@@ -3,6 +3,7 @@ layout: single
 title:  "Ser Humano / Being Human"
 excerpt: "Una reflexión dialéctica sobre el devenir de la vida / A dialectic reflexion about the course of life"
 date: 2013-10-17 09:01:02
+published: false
 classes: wide
 tags: 
     - dialectic

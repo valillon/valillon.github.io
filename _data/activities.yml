@@ -1,0 +1,63 @@
+talks:
+  - date: "August 2026"
+    context: "Opinion series"
+    title: "What artificial intelligence really changes [SPANISH/CATALAN]"
+    description: "A three-part series for El Nacional.cat exploring the impact of artificial intelligence on society and our relationship with machines."
+    links:
+      - label: "What really changes with AI?"
+        url: "https://www.elnacional.cat/oneconomia/es/on-ia/que-cambia-realmente-inteligencia-artificial_1677788_102.html"
+      - label: "Who will feed AI?"
+        url: "https://www.elnacional.cat/oneconomia/es/on-ia/quien-alimentara-inteligencia-artificial_1680835_102.html"
+      - label: "Our relationship with machines"
+        url: "https://www.elnacional.cat/oneconomia/es/on-ia/cuando-reto-es-relacion-con-maquina_1683532_102.html"
+
+  - date: "June 4, 2026"
+    context: "PHASE IV AI Final Conference"
+    title: "Synthetic data generation and assessment"
+    url: "https://www.phase4ai-project.eu/?page_id=2218"
+    description: "Quality, privacy and utility of synthetic medical data at the PHASE IV AI Final Conference, Turku, Finland."
+
+  - date: "May 27, 2026"
+    context: "CIDAI Blog"
+    title: "Generative models: creating to anticipate the future"
+    url: "https://cidai.eu/en/generative-models-creating-to-anticipate-the-future/"
+    description: "How generative systems are evolving from content-creation tools into models capable of simulating complex future scenarios."
+
+  - date: "May 22, 2026"
+    context: "SYNTHEMA Project"
+    title: "Quality assessment and clinical applications of medical image synthesis"
+    url: "https://www.youtube.com/watch?v=Ep4juTDnLb4"
+    description: "A panel on clinical interoperability and advances in 3D medical image synthesis for the SYNTHEMA European Project."
+
+  - date: "June 6, 2024"
+    context: "BCN Music Lab"
+    title: "Research meets Music Industry"
+    url: "https://bcnmusiclab.com/es/connecta/"
+    description: "Applications of artificial intelligence in the musical industries. CONNECTA event organized by BCN Music Lab."
+
+  - date: "December 13, 2021"
+    context: "CIDAI Masterclass"
+    title: "Generative neural models for multimodal domain translation [SPANISH]"
+    url: "https://cidai.eu/es/masterclass/masterclass-redes-neuronales-generativas-para-traduccion-multimodal-entre-dominios/"
+    description: "An overview of generative model families for cross-modal generation between text, audio, still images and video."
+
+supervision:
+  - date: "July 2026"
+    program: "MSc in Computer Vision, UAB–CVC"
+    title: "Multimodal Fusion Strategies for Robust Affective State Modeling"
+    student: "Oriol Marín"
+
+  - date: "June 2024"
+    program: "MSc in Computer Vision, UAB–CVC"
+    title: "Preserving the Past: Enhancing 3D Geometry Recovery for Cultural Heritage"
+    student: "Albert Barreiro"
+
+  - date: "June 2024"
+    program: "MSc in Computer Vision, UAB–CVC"
+    title: "Modern 3D Material Digitization for Cultural Heritage Preservation"
+    student: "Advait Dixit"
+
+  - date: "2022"
+    program: "Erasmus Mundus IPCV"
+    title: "Object Detection and Segmentation for 360° Urban Stocktaking"
+    student: "Oscar Juarez Delgado"

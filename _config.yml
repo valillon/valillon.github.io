@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "valillon.github.io"
+title                    : "Rafael Redondo"
 title_separator          : "-"
-# name                     : "Rafael Redondo Tejedor"
-description              : "AI Research & Multimedia Innovation<br>@[Eurecat](https://www.eurecat.org/)<br><br>Research interests: AI, Computer Vision, Deep Learning, Generative Models, Multimodal Audio-Visual Learning, Interactive Systems."
+name                     : "Rafael Redondo Tejedor"
+description              : "AI research director working across computer vision, generative AI, multimodal systems and multimedia innovation at Eurecat."
 url                      : "https://valillon.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "valillon/valillon.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -84,41 +84,42 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/RRT2.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links                  : # An array of links to social media profiles
+  type                   : Person
+  name                   : "Rafael Redondo Tejedor"
+  links:
+    - "https://www.linkedin.com/in/rafaelredondotejedor"
+    - "https://scholar.google.es/citations?user=QKaQVQkAAAAJ&hl=en"
+    - "https://github.com/valillon"
+    - "https://valillon.art"
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
-  google:
-    tracking_id          : "UA-154967154-1"
-    anonymize_ip         : false # true, false (default)
+  provider               : false
 
 # Site Author
 author:
-  name             : "Rafael Redondo"
+  name             : "Rafael Redondo Tejedor"
   avatar           : "/assets/RRT2.jpg"
-  bio              : "AI Research & Multimedia Innovation<br>@[Eurecat](https://www.eurecat.org/)<br><br>Research interests: AI, Computer Vision, Deep Learning, Generative Models, Multimodal Audio-Visual Learning, Interactive Systems."
+  bio              : "AI research director, working across computer vision, multimodal generative AI, and interactive systems."
   location         : "Barcelona, ES"
   email            : # "some@email.com"
   links:
     - label: "LinkedIn"
-      icon: fab fa-fw fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rafaelredondotejedor"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
-      url: "http://scholar.google.es/citations?user=QKaQVQkAAAAJ&hl=es&oi=ao"
+      url: "https://scholar.google.es/citations?user=QKaQVQkAAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/valillon"
     - label: "valillon.art"
       icon: "far fa-circle"
-      url: "http://valillon.art"
+      url: "https://valillon.art"
     # - label: "SoundCloud"
     #   icon: fab fa-fw fa-soundcloud"
     #   url: "https://soundcloud.com/valillon"    
@@ -154,7 +155,7 @@ footer:
   links:
     - label: "valillon.art"
       icon: "far fa-circle"
-      url: "http://valillon.art"
+      url: "https://valillon.art"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/valillon"
@@ -162,7 +163,7 @@ footer:
     #   icon: fab fa-fw fa-soundcloud"
     #   url: "https://soundcloud.com/valillon"    
     - label: "LinkedIn"
-      icon: fab fa-fw fa-linkedin"
+      icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/rafaelredondotejedor"
     
 

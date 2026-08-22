@@ -1,0 +1,32 @@
+---
+layout: single
+---
+
+{{ content }}
+
+<div class="award-list">
+  {% for award in site.data.awards %}
+    <article class="award-card">
+      <p class="award-card__year">{{ award.year }} · {{ award.recognition }}</p>
+      <h2>
+        {% if award.url %}<a href="{{ award.url }}">{{ award.title }}</a>{% else %}{{ award.title }}{% endif %}
+      </h2>
+
+      {% if award.featured_work %}
+        <p><em>{{ award.featured_work }}</em>{% if award.contributors %}, {{ award.contributors }}{% endif %}</p>
+      {% endif %}
+
+      {% if award.description %}<p>{{ award.description }}</p>{% endif %}
+
+      {% if award.links %}
+        <nav class="award-card__links" aria-label="Links for {{ award.title }}">
+          {% for link in award.links %}
+            <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+          {% endfor %}
+        </nav>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+
+{% include nav-activator.html %}

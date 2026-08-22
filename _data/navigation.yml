@@ -1,5 +1,5 @@
 main:
-  - title: "Bio"
+  - title: "Profile"
     url: /
   - title: "Publications"
     url: /publications/

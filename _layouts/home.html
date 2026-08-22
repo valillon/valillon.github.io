@@ -1,9 +1,14 @@
 ---
-layout: archive
+layout: default
 ---
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
 
-{{ content }}
+<div id="main" role="main">
+  {% include sidebar.html locale=locale %}
+  <div class="archive">
+    {{ content }}
+  </div>
+</div>
 
 <!-- Intentionally omit recent posts block to keep homepage content only -->
 

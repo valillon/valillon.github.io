@@ -1,0 +1,31 @@
+- year: 2026
+  recognition: "Best Paper Award"
+  title: "ISPRS/CIPA 3D-ARCH Workshop"
+  url: "https://isprs-archives.copernicus.org/articles/XLVIII-2-W12-2026/33/2026/"
+  featured_work: "ShinyNeRF: Digitizing Anisotropic Appearance in Neural Radiance Fields"
+  contributors: "by Albert Barreiro, Roger Marí, Rafael Redondo, Gloria Haro and Carles Bosch."
+  links:
+    - label: "Project page"
+      url: "https://multimedia-eurecat.github.io/ShinyNeRF/"
+    - label: "Code"
+      url: "https://github.com/multimedia-eurecat/ShinyNeRF"
+
+- year: 2026
+  recognition: "Best R&D Project"
+  title: "TM Broadcast Award"
+  url: "https://tmbroadcast.es/premio-broadcast-3cat-innovacion/"
+  description: "An AI assistant for contextualized image descriptions in news, developed as a CIDAI Impact Project with <a href='https://www.3cat.cat/'>3Cat</a>."
+  links:
+    - label: "Project page"
+      url: "https://cidai.eu/en/projects/intelligent-assistance-in-contextualized-description-of-photos-for-news/"
+
+- year: 2024
+  recognition: "AI R&D and Innovation"
+  title: "AMETIC AI Award"
+  url: "https://ametic.es/prensa/ametic-reconoce-la-innovacion-en-inteligencia-artificial-con-la-entrega-de-los-premios-ia-de-ametic-2024/"
+  description: "Smart tools for summarizing audiovisual news content. A CIDAI Impact Project with <a href='https://www.3cat.cat/'>3Cat</a>."
+  links:
+    - label: "Project page"
+      url: "https://cidai.eu/en/events/presentation-high-impact-project-smart-tools-for-summarising-and-generating-audiovisual-content-in-news/"
+    - label: "News"
+      url: "https://eurecat.org/en/eurecat-scoops-ametic-artificial-intelligence-summit-2024-award-in-the-ai-innovation-category-with-a-cidai-project-backed-by-3cat/"

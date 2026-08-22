@@ -39,7 +39,10 @@ layout: archive
       </div>
 
       <div class="publication-card__content">
-        <div class="publication-card__title">{{ publication.title }}</div>
+        {% assign primary_link = publication.links | first %}
+        <h2 class="publication-card__title">
+          {% if primary_link %}<a class="publication-card__title-link" href="{{ primary_link.url }}">{{ publication.title }}</a>{% else %}{{ publication.title }}{% endif %}
+        </h2>
 
         <div class="publication-card__authors">
           {% for author in publication.authors %}
@@ -47,12 +50,15 @@ layout: archive
           {% endfor %}
         </div>
 
-        <div class="publication-card__venue"><em>{{ publication.venue }}</em>, {{ publication.year }}</div>
+        <div class="publication-card__meta">
+          <span class="publication-card__venue"><em>{{ publication.venue }}</em></span>
+          <span class="publication-card__year">{{ publication.year }}</span>
+        </div>
 
         {% if publication.links %}
           <nav class="publication-card__links" aria-label="Links for {{ publication.title }}">
             {% for link in publication.links %}
-              <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+              <a href="{{ link.url }}">{{ link.label }}</a>
             {% endfor %}
           </nav>
         {% endif %}
@@ -63,7 +69,6 @@ layout: archive
         {% endif %}
       </div>
     </article>
-    <br>
   {% endfor %}
 </div>
 

@@ -1,0 +1,40 @@
+---
+layout: single
+---
+
+{{ content }}
+
+<h2>Talks & dissemination</h2>
+
+<div class="timeline">
+  {% for activity in site.data.activities.talks %}
+    <article class="timeline-item">
+      <p class="timeline-item__date">{{ activity.date }}{% if activity.context %} · {{ activity.context }}{% endif %}</p>
+      <h3>
+        {% if activity.url %}<a href="{{ activity.url }}">{{ activity.title }}</a>{% else %}{{ activity.title }}{% endif %}
+      </h3>
+      {% if activity.description %}<p>{{ activity.description }}</p>{% endif %}
+      {% if activity.links %}
+        <nav class="timeline-item__links" aria-label="Links for {{ activity.title }}">
+          {% for link in activity.links %}
+            <a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+          {% endfor %}
+        </nav>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+
+<h2>Scientific supervision</h2>
+
+<div class="timeline">
+  {% for supervision in site.data.activities.supervision %}
+    <article class="timeline-item">
+      <p class="timeline-item__date">{{ supervision.date }}{% if supervision.program %} · {{ supervision.program }}{% endif %}</p>
+      <h3>{{ supervision.title }}</h3>
+      <p>{{ supervision.student }}</p>
+    </article>
+  {% endfor %}
+</div>
+
+{% include nav-activator.html %}

@@ -5,11 +5,26 @@ layout: archive
 
 {{ content }}
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
+<div class="posts-grid">
   {% for post in site.posts %}
     {% if post.hidden != true %}
-      {% include archive-single.html locale=locale type=entries_layout post=post %}
+      <article class="post-card">
+        {% if post.header.teaser or post.header.image %}
+          <a class="post-card__teaser" href="{{ post.url | relative_url }}" tabindex="-1" aria-hidden="true">
+            <img src="{{ post.header.teaser | default: post.header.image | relative_url }}" alt="" loading="lazy">
+          </a>
+        {% endif %}
+        <div class="post-card__body">
+          <time class="post-card__date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          <h2><a class="post-card__title-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          {% if post.excerpt %}<p class="post-card__excerpt">{{ post.excerpt | strip_html | truncate: 180 }}</p>{% endif %}
+          {% if post.tags %}
+            <div class="post-card__tags" aria-label="Topics">
+              {% for tag in post.tags limit:3 %}<span class="post-card__tag">#{{ tag }}</span>{% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </article>
     {% endif %}
   {% endfor %}
 </div>

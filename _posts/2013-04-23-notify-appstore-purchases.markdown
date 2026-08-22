@@ -3,6 +3,7 @@ layout: single
 title:  "Notifying Daily AppStore Reports With Automator"
 excerpt: "This is an old post from Blogger, now migrated here, for notifying AppStore purchases with Automator (macOS)."
 date:   2013-04-23 11:00:00
+published: false
 classes: wide
 tags: 
     - java
