@@ -9,7 +9,7 @@ classes: wide
   <h1 id="home-title">Rafael Redondo Tejedor</h1>
   <p class="home-hero__eyebrow">AI research & multimedia innovation</p>
   <!-- <p class="home-hero__role">Research director working across computer vision, multimodal generative AI, multimedia and interactive technologies.</p> -->
-  <p class="home-hero__intro">I lead the <strong>Multimedia Technologies Unit at <a href="https://eurecat.org/en/field-of-knowledge/multimedia-technologies/">Eurecat</a></strong>, translating advances in artificial intelligence and multimedia into real-world applications with industrial and societal impact.</p>
+  <p class="home-hero__intro">I lead the <a href="https://eurecat.org/en/field-of-knowledge/multimedia-technologies/">Multimedia Technologies Unit</a> at <strong>Eurecat</strong>, translating advances in artificial intelligence and multimedia into real-world applications with industrial and societal impact.</p>
 </section>
 
 <div class="metric-grid" aria-label="Career highlights">
@@ -56,7 +56,7 @@ classes: wide
 <section class="content-section" aria-labelledby="perspective-title">
   <p class="section-eyebrow">Perspective</p>
   <h2 id="perspective-title">Technology in dialogue with image and sound</h2>
-  <p>An MSc in Sonology at <a href="https://www.upf.edu/">UPF</a>–<a href="https://www.esmuc.cat/es/">ESMUC</a> shaped a long-standing interest in the intersection of image, sound and interactive technologies. This perspective continues to inform both my research and creative computing practice. Explore the <a href="/blog/">blog</a>, <a href="https://valillon.art">creative projects</a> or <a href="https://github.com/valillon">code</a>.</p>
+  <p>An MSc in Sonology at <a href="https://www.upf.edu/">UPF</a>–<a href="https://www.esmuc.cat/es/">ESMUC</a> (2012) shaped a long-standing interest in the intersection of image, sound and interactive technologies. This perspective continues to inform both my research and creative computing practice. Explore the <a href="/blog/">blog</a>, <a href="https://valillon.art">creative projects</a> or <a href="https://github.com/valillon">code</a>.</p>
 </section>
 
 

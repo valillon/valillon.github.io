@@ -16,6 +16,7 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 
 gem "minimal-mistakes-jekyll"
 gem "webrick"
+gem "faraday-retry", "~> 2.0"
 
 # # This is the default theme for new Jekyll sites.
 # gem 'minima', '~> 2.0'

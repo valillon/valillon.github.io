@@ -14,17 +14,18 @@
   recognition: "Best R&D Project"
   title: "TM Broadcast Award"
   url: "https://tmbroadcast.es/premio-broadcast-3cat-innovacion/"
-  description: "An AI assistant for contextualized image descriptions in news.<br>CIDAI Impact Project, in collaboration with <a href='https://www.3cat.cat/'>3Cat</a>."
+  description: "An AI assistant for contextualized image captioning and accessible descriptions in news - CIDAI Impact Project in collaboration with <a href='https://www.3cat.cat/'>3Cat</a>."
   links:
     - label: "Project page"
       url: "https://cidai.eu/en/projects/intelligent-assistance-in-contextualized-description-of-photos-for-news/"
     - label: "News"
       url: "https://eurecat.org/es/3cat-premio-tm-broadcast-2026-asistente-ia-con-eurecat/"
+
 - year: 2024
   recognition: "AI R&D and Innovation"
   title: "AMETIC AI Award"
   url: "https://ametic.es/prensa/ametic-reconoce-la-innovacion-en-inteligencia-artificial-con-la-entrega-de-los-premios-ia-de-ametic-2024/"
-  description: "Smart tools for summarizing audiovisual news content.<br>CIDAI Impact Project, in collaboration with <a href='https://www.3cat.cat/'>3Cat</a>."
+  description: "Smart tools for summarizing audiovisual news content - CIDAI Impact Project in collaboration with <a href='https://www.3cat.cat/'>3Cat</a>."
   links:
     - label: "Project page"
       url: "https://cidai.eu/en/events/presentation-high-impact-project-smart-tools-for-summarising-and-generating-audiovisual-content-in-news/"
