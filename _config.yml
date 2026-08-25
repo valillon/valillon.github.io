@@ -10,8 +10,9 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                    : "minimal-mistakes-jekyll"
-# remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
+# Minimal Mistakes is not one of GitHub Pages' bundled themes, so load it
+# through the supported jekyll-remote-theme plugin instead.
+remote_theme             : "mmistakes/minimal-mistakes@4.28.1"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings

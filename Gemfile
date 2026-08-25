@@ -14,7 +14,6 @@ gem "jekyll-include-cache", group: :jekyll_plugins
 # gem "jekyll", "~> 3.7.3"
 # gem "jekyll"
 
-gem "minimal-mistakes-jekyll"
 gem "webrick"
 gem "faraday-retry", "~> 2.0"
 
