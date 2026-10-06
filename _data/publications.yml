@@ -12,11 +12,11 @@
   description: "A multimodal emotion recognition model relying on video, speech, and text in conversations that proposes a class-wise adaptive modality fusion, and a valence-arousal prior for affective transitions."
   links:
     - label: "paper"
-      url: ""
+      url: "https://arxiv.org/pdf/2609.09924"
+    - label: "poster"
+      url: "/assets/publications/2026_MultimodalERC_poster.pdf"
     - label: "code"
       url: "https://github.com/multimedia-eurecat/classwise-multimodal-ERC"
-    - label: "doi"
-      url: ""
 
 - title: "Anatomically Guided Latent Diffusion for High-Resolution 3D Chest CT Synthesis"
   authors:
